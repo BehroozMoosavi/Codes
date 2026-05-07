@@ -1,0 +1,13 @@
+\begin{table}[t]\centering
+\caption{VA-REN mechanism diagnostics. Expected: higher vol, lower $\alpha_t$, denser model in ramp hours.}
+\label{tab:varen_mechanism}
+\begin{tabular}{@{}lrp{6cm}@{}}\toprule
+Quantity & Value & Interpretation\\\midrule
+Mean normalized volatility, stable hours & 0.5324 & Low volatility expected in solar-plateau hours\\
+Mean normalized volatility, ramp hours & 0.5340 & High volatility expected in ramp hours\\
+Mean alpha, stable hours & 0.4676 & Stable hours push VA-REN toward LASSO (sparse)\\
+Mean alpha, ramp hours & 0.4660 & Ramp hours push VA-REN toward Ridge (dense)\\
+Mean active-set size, stable hours & 48.7666 & Relatively sparse model expected in stable hours\\
+Mean active-set size, ramp hours & 48.8048 & Ramp hours should retain more correlated predictors\\
+Corr(alpha, active-set size) & -0.2281 & Confirms adaptive alpha changes model sparsity\\
+\bottomrule\end{tabular}\end{table}
