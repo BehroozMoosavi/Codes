@@ -1,0 +1,4 @@
+"mu","minimum_gap","maximum_gap","endpoint_dominance_holds","maximum_numerical_violation","fraction_strictly_positive","fraction_numerically_zero"
+0.5,0,0.0493531607108226,TRUE,0,0.999000499750125,0.000999500249875062
+1,0,0.095730938776087,TRUE,0,0.998500749625187,0.00149925037481259
+2,0,0.170667652196624,TRUE,0,0.999000499750125,0.000999500249875062

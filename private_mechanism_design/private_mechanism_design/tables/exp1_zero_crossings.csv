@@ -1,0 +1,13 @@
+"channel","lambda","zero_y"
+"Gaussian",0,0
+"Gaussian",0.3,0.208942
+"Gaussian",0.7,0.332663
+"Gaussian",1.5,0.439795
+"Laplace",0,0
+"Laplace",0.3,0.275956
+"Laplace",0.7,0.436988
+"Laplace",1.5,0.575469
+"Logistic",0,0
+"Logistic",0.3,0.433287
+"Logistic",0.7,0.715725
+"Logistic",1.5,1.001783

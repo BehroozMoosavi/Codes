@@ -1,0 +1,4 @@
+"mu","minimum_gap","maximum_gap","endpoint_welfare_order_holds","maximum_numerical_violation","fraction_logistic_strictly_better","fraction_equal"
+0.5,0,0.0474966909139221,TRUE,0,0.382978723404255,0.617021276595745
+1,0,0.0885448965993194,TRUE,0,0.723404255319149,0.276595744680851
+2,0,0.166210369769671,TRUE,0,0.978723404255319,0.0212765957446809
