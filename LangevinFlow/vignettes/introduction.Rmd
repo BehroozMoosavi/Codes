@@ -1,0 +1,117 @@
+---
+title: "Introduction to LangevinFlow"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to LangevinFlow}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>",
+  fig.width  = 6,
+  fig.height = 4
+)
+```
+
+# Overview
+
+`LangevinFlow` implements two Markov chain Monte Carlo (MCMC) samplers
+based on overdamped Langevin diffusion:
+
+- `ula()` — the **Unadjusted Langevin Algorithm**, an Euler-Maruyama
+  discretization of the SDE. Cheap per step, but introduces a
+  discretization bias that vanishes only as the step size goes to zero.
+- `mala()` — the **Metropolis-Adjusted Langevin Algorithm**, which
+  corrects that bias with an accept/reject step. Asymptotically exact.
+
+Both target $\pi(x) \propto \exp(-\beta U(x))$ for a user-supplied
+potential $U$. The user passes the gradient $\nabla U$ (and, for MALA,
+$U$ itself).
+
+## Sign convention
+
+The Langevin SDE is
+
+$$
+dX_t = -\nabla U(X_t)\,dt + \sqrt{2/\beta}\,dW_t,
+$$
+
+so the user supplies $U = -\log \pi$ (the *potential* / negative log
+density). Get this wrong and the chain runs away from the mode rather
+than toward it — so it's worth a sanity check on a simple target before
+trusting any real run.
+
+# Example 1: standard Gaussian
+
+```{r}
+library(LangevinFlow)
+
+# Target: N(0, I_2). U(x) = 0.5 * ||x||^2.
+U      <- function(x) 0.5 * sum(x^2)
+grad_u <- function(x) x
+
+set.seed(1)
+fit_ula <- ula(init_x = c(3, -3), grad_u = grad_u,
+               step_size = 0.05, n_iter = 5000, burn_in = 1000)
+summary(fit_ula)
+```
+
+```{r, fig.alt="ULA trace plots"}
+plot(fit_ula)
+```
+
+The same target with MALA:
+
+```{r}
+set.seed(1)
+fit_mala <- mala(init_x = c(3, -3), U = U, grad_u = grad_u,
+                 step_size = 0.4, n_iter = 5000, burn_in = 1000)
+fit_mala$acceptance_rate
+summary(fit_mala)
+```
+
+# Example 2: a correlated Gaussian
+
+```{r}
+Sigma     <- matrix(c(1, 0.8, 0.8, 1), 2, 2)
+Sigma_inv <- solve(Sigma)
+mu_true   <- c(2, -1)
+
+U      <- function(x) 0.5 * as.numeric(t(x - mu_true) %*% Sigma_inv %*% (x - mu_true))
+grad_u <- function(x) as.numeric(Sigma_inv %*% (x - mu_true))
+
+set.seed(2)
+fit <- mala(c(0, 0), U, grad_u, step_size = 0.4,
+            n_iter = 8000, burn_in = 2000)
+colMeans(fit$samples)
+cov(fit$samples)
+```
+
+# Choosing the step size
+
+For MALA in $d$ dimensions, the optimal acceptance rate is known to be
+roughly **0.574** as $d \to \infty$ (Roberts & Rosenthal, 1998). A
+practical recipe:
+
+1. Run a short pilot chain.
+2. If the acceptance rate is too high (>0.7), the steps are too small —
+   **increase** `step_size`.
+3. If it is too low (<0.4), the steps are too large — **decrease**
+   `step_size`.
+4. Iterate until it lands in the 0.5–0.6 range.
+
+For ULA there is no accept/reject feedback, so step-size choice depends
+on the curvature of $U$: too large and the chain diverges (the package
+raises an error); too small and mixing is slow.
+
+# References
+
+- Roberts, G. O., & Tweedie, R. L. (1996). Exponential convergence of
+  Langevin distributions and their discrete approximations.
+  *Bernoulli*, 2(4), 341-363.
+- Roberts, G. O., & Rosenthal, J. S. (1998). Optimal scaling of
+  discrete approximations to Langevin diffusions.
+  *JRSS-B*, 60(1), 255-268.

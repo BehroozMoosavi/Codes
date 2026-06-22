@@ -1,0 +1,3 @@
+## Use C++11 (Rcpp requirement); RcppArmadillo flags handled by LinkingTo
+PKG_CXXFLAGS = $(SHLIB_OPENMP_CXXFLAGS)
+PKG_LIBS = $(SHLIB_OPENMP_CXXFLAGS) $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)
