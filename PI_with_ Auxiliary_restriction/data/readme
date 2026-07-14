@@ -1,0 +1,11 @@
+The Python code above get the CPS DATA 2020 that we need from CENSUS.
+The variables are explained in a separate file in this directory.
+The CSV file for data is also in this directory with name cps2020_v1.CSV.
+In the Codes and results we use this data, for the methodology and other numerical explanation, please look at the readme file at the related directory.
+
+Here are all directories for this project.
+
+Codes/PI_with_ Auxiliary_restriction/codes/readme
+Codes/PI_with_ Auxiliary_restriction/data/readme
+Codes/PI_with_ Auxiliary_restriction/results/readme
+Codes/PI_with_ Auxiliary_restriction/readme
