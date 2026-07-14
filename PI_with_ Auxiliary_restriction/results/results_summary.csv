@@ -1,0 +1,141 @@
+block,description,value
+01_data_setup,sample size n,22397
+01_data_setup,mean income ($1000s),63.989182077956876
+01_data_setup,mean educ (years),14.208242175291334
+01_data_setup,Q eigenvalue (smallest),0.033333066049298865
+01_data_setup,Q eigenvalue (largest),209.83526540696047
+01_data_setup,Assumption 1 (Q positive definite),True
+02_interval_construction,containment holds for all n,True
+02_interval_construction,all endpoints finite,True
+02_interval_construction,yL > 0 for all n,True
+02_interval_construction,min(yL),0.001999
+02_interval_construction,mean interval width Delta ($1000s),140.607636885318
+02_interval_construction,mean width as % of mean income,219.736574713548
+03_prop_basic,theta_intercept min (unconstrained),-364.09723945762624
+03_prop_basic,theta_intercept max (unconstrained),240.02958006770592
+03_prop_basic,theta_intercept polygon-matches-closed-form,True
+03_prop_basic,theta_educ min (unconstrained),-9.958756539135027
+03_prop_basic,theta_educ max (unconstrained),32.822787941022156
+03_prop_basic,theta_educ polygon-matches-closed-form,True
+03_prop_basic,area(Theta^I) unconstrained,4076.2708976977024
+04_prop_mean_hyperplane,"kappa (known mean, $1000s)",63.989182077956876
+04_prop_mean_hyperplane,alpha = kappa - E[yL],33.89798258483695
+04_prop_mean_hyperplane,Lambda = E[Delta],140.607636885318
+04_prop_mean_hyperplane,E[xtilde]'theta(y_kappa),63.9891820779584
+04_prop_mean_hyperplane,E[xtilde]'theta(y_kappa) == kappa,True
+04_prop_mean_hyperplane,segment endpoint hi (theta_0),-263.08188997632897
+04_prop_mean_hyperplane,segment endpoint hi (theta_educ),23.019812586181576
+04_prop_mean_hyperplane,segment endpoint lo (theta_0),190.5566738709955
+04_prop_mean_hyperplane,segment endpoint lo (theta_educ),-8.908033114268186
+04_prop_mean_hyperplane,segment length,454.76074362298993
+04_prop_mean_hyperplane,segment area (affine dim <= 1),0.0
+04_prop_mean_hyperplane,LP cross-check value (subsample),275.0544882246587
+04_prop_mean_hyperplane,closed-form value (subsample),275.05448822465877
+04_prop_mean_hyperplane,LP matches closed-form,True
+05_prop_width,w_Theta^I(r) direct: E[|s_r|Delta],274.13581264292344
+05_prop_width,w_Theta^I(r) via sup-inf formula,274.13581264292344
+05_prop_width,directional breadth formulas match,True
+05_prop_width,max abs diff: s_j formula vs direct,9.103828801926284e-15
+05_prop_width,"coordinate breadth (educ), closed form",42.78154448015707
+05_prop_width,"coordinate breadth (educ), direct (max-min)",42.78154448015718
+05_prop_width,coordinate breadth formulas match,True
+06_prop_directional_contraction_mean,h_unc(r),114.95463684068456
+06_prop_directional_contraction_mean,U_kappa(r),90.40202449751636
+06_prop_directional_contraction_mean,delta_kappa(r) direct,24.552612343168192
+06_prop_directional_contraction_mean,delta_kappa(r) quantile-band integral,24.555127732543554
+06_prop_directional_contraction_mean,delta_kappa(r) formulas match (2%),True
+06_prop_directional_contraction_mean,p_kappa,0.24108208725877905
+06_prop_directional_contraction_mean,u_r,0.48675845365079173
+07_cor_local_mean_contraction,n distinct educ values,12
+07_cor_local_mean_contraction,density estimate f_r(0),0.04227907357866049
+07_cor_local_mean_contraction,"ratio at h=0.04 (real data, expect NOT->1)",2.4066374864800957
+07_cor_local_mean_contraction,"ratio at h=0.02 (real data, expect NOT->1)",4.813274972961079
+07_cor_local_mean_contraction,"ratio at h=0.01 (real data, expect NOT->1)",9.626549945925447
+07_cor_local_mean_contraction,"ratio at h=0.005 (real data, expect NOT->1)",19.253099891863542
+07_cor_local_mean_contraction,"ratio at h=0.04 (synthetic continuous, expect ->1)",1.0216669554143951
+07_cor_local_mean_contraction,"ratio at h=0.02 (synthetic continuous, expect ->1)",1.0298263764606672
+07_cor_local_mean_contraction,"ratio at h=0.01 (synthetic continuous, expect ->1)",1.0317205731222718
+07_cor_local_mean_contraction,"ratio at h=0.005 (synthetic continuous, expect ->1)",1.0428697041783779
+08_prop_transformed_convexity,kappa_f = E[y*^2],6625.183686886145
+08_prop_transformed_convexity,area(Theta^I_f) unconstrained,468199377.0655674
+08_prop_transformed_convexity,unconstrained check: brute force,23890.010941145872
+08_prop_transformed_convexity,unconstrained check: closed form,23890.010941145872
+08_prop_transformed_convexity,brute matches closed form,True
+08_prop_transformed_convexity,E[xtilde]'theta_f(g_kappaf),6625.1836868859145
+08_prop_transformed_convexity,E[xtilde]'theta_f == kappa_f,True
+08_prop_transformed_convexity,Theta^I_(f|kappa) segment area,0.0
+08_prop_transformed_convexity,g-space LP cross-check value,45224.26353828526
+08_prop_transformed_convexity,g-space closed-form value,45224.263538285275
+08_prop_transformed_convexity,g-space LP matches closed-form,True
+09_prop_moment_aux_convexity,max constraint-matching error (all directions),3.637978807091713e-12
+09_prop_moment_aux_convexity,area(Theta^I_kappa_f) moment-only,670.4260863385035
+09_prop_moment_aux_convexity,area as % of unconstrained,16.447044447344346
+09_prop_moment_aux_convexity,min margin (non-degeneracy check),0.8396440202679027
+10_prop_conditional_fwl,Sigma_2.1 (Schur complement),6.963129639537243
+10_prop_conditional_fwl,"theta_educ unconstrained, min",-9.79364262123843
+10_prop_conditional_fwl,"theta_educ unconstrained, max",32.887936874874384
+10_prop_conditional_fwl,"theta_educ | E[y*|race], min",-8.516944473894322
+10_prop_conditional_fwl,"theta_educ | E[y*|race], max",22.896468161152427
+10_prop_conditional_fwl,nesting holds,True
+10_prop_conditional_fwl,width remaining (%),73.59946142084009
+10_prop_conditional_fwl,kappa_race[1.0],64.68173149963587
+10_prop_conditional_fwl,alpha_race[1.0],34.05405829038826
+10_prop_conditional_fwl,n in race=1.0,17851
+10_prop_conditional_fwl,kappa_race[2.0],61.26971447426308
+10_prop_conditional_fwl,alpha_race[2.0],33.28511249689229
+10_prop_conditional_fwl,n in race=2.0,4546
+10_prop_conditional_fwl,LP cross-check value,24.25809292766811
+10_prop_conditional_fwl,closed-form cellwise value,24.258092927668102
+10_prop_conditional_fwl,LP matches closed-form,True
+11_appendix_3d_detail,3D non-degeneracy margin (min),6.32668936760466
+11_appendix_3d_detail,Theta^I 3D vertex count,413
+11_appendix_3d_detail,Theta^I 3D volume,1320690.2052057679
+11_appendix_3d_detail,tangency check (hi endpoint),1.2323475573339238e-13
+11_appendix_3d_detail,tangency check (lo endpoint),1.461053500406706e-13
+11_appendix_3d_detail,projected Theta^I 2D area,9117.438055934688
+12_prop_external_contraction,number of age cells,5
+12_prop_external_contraction,cell 0 size,4428
+12_prop_external_contraction,kappa_v[0],35.55959733514002
+12_prop_external_contraction,cell 1 size,4510
+12_prop_external_contraction,kappa_v[1],57.60335121951219
+12_prop_external_contraction,cell 2 size,4234
+12_prop_external_contraction,kappa_v[2],71.21446622579121
+12_prop_external_contraction,cell 3 size,3985
+12_prop_external_contraction,kappa_v[3],76.1354042659975
+12_prop_external_contraction,cell 4 size,5240
+12_prop_external_contraction,kappa_v[4],78.43417251908397
+12_prop_external_contraction,E[kappa(v)],63.98918207795687
+12_prop_external_contraction,E[kappa(v)] == kappa (pooled),True
+12_prop_external_contraction,h_cond(r) [conditional on v],87.93671973581891
+12_prop_external_contraction,h_pooled(r) [mean-only],90.40202449751636
+12_prop_external_contraction,h_unc(r) [unconstrained],114.95463684068456
+12_prop_external_contraction,external_sharp: h_cond <= h_unc,True
+12_prop_external_contraction,extra contraction from conditioning,2.4653047616974533
+12_prop_external_contraction,extra contraction >= 0,True
+12_prop_external_contraction,"theta_educ unconstrained, min",-9.958756539135027
+12_prop_external_contraction,"theta_educ unconstrained, max",32.822787941022156
+12_prop_external_contraction,"theta_educ pooled (E[y*]=kappa), min",-8.908033114268525
+12_prop_external_contraction,"theta_educ pooled (E[y*]=kappa), max",23.01981258618138
+12_prop_external_contraction,"theta_educ conditional (E[y*|v]), min",-8.52596858386682
+12_prop_external_contraction,"theta_educ conditional (E[y*|v]), max",23.019812586181676
+13_cor_between_cell,pooled cutoff c*,2.5516637865362104
+13_cor_between_cell,cell 0 cutoff c_m*,2.5516637865362104
+13_cor_between_cell,cell 0 cutoff differs from pooled,False
+13_cor_between_cell,cell 1 cutoff c_m*,2.5516637865362104
+13_cor_between_cell,cell 1 cutoff differs from pooled,False
+13_cor_between_cell,cell 2 cutoff c_m*,0.7066052563594474
+13_cor_between_cell,cell 2 cutoff differs from pooled,True
+13_cor_between_cell,cell 3 cutoff c_m*,0.7066052563594474
+13_cor_between_cell,cell 3 cutoff differs from pooled,True
+13_cor_between_cell,cell 4 cutoff c_m*,0.7066052563594474
+13_cor_between_cell,cell 4 cutoff differs from pooled,True
+14_prop_appendix_quantile,median m ($1000s),50.0
+14_prop_appendix_quantile,empirical target fraction below m,0.5052462383354913
+14_prop_appendix_quantile,n always below m,5860
+14_prop_appendix_quantile,n always above m,5419
+14_prop_appendix_quantile,n straddling m,11118
+14_prop_appendix_quantile,K (target below-count among straddlers),5456
+14_prop_appendix_quantile,achieved fraction below m matches target,True
+14_prop_appendix_quantile,area(Theta^I_median),3933.7184776284157
+14_prop_appendix_quantile,area as % of unconstrained,96.50287177552893
+14_prop_appendix_quantile,min margin (non-degeneracy check),2.2254607299982454
