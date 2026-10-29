@@ -1,0 +1,36 @@
+VA-REN REVISION: STEP 8 SAVED-FORECAST ANALYSIS
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+
+STEP8_STATUS: PASS
+SELF_TEST_STATUS: PASS
+INPUT_VALIDATION: PASS
+RNG_RESTORATION_CHECK: PASS
+FORECASTS_REFIT: NO
+FORECAST_ORIGINS: 34343
+ALIGNED_OUTPUTS: 8
+DISTINCT_FORECAST_RULES: 7
+
+Primary displayed analysis: full-sample MSE, Bartlett HAC lag 168 elapsed hours.
+Sensitivity bandwidths: 24, 48 and 720 hours; no bandwidth selected by p-value.
+All analyses are revision-stage exploratory, not preregistered confirmatory tests.
+DM tests are two-sided asymptotic loss-differential comparisons.
+Gains are comparator minus VA-REN; positive values favor VA-REN.
+RMSE/MAE effect intervals are pointwise asymptotic 95% intervals, not simultaneous.
+Holm p-values adjust all three planned pairs separately by test, loss and bandwidth.
+Undefined tests remain in the multiplicity family and retain undefined reported p-values.
+GW-style tests are secondary joint conditional-moment tests, with nondirectional p-values.
+Instruments: constant, causal normalized volatility, Pacific midday and evening indicators.
+Year and clock-window results are descriptive only; no compressed-subset inference.
+Identical StaticEN/LASSO predictions are reported once for comparison inference.
+
+Inference assumes suitable weak dependence, finite relevant moments, and sufficient stability
+for the stated asymptotic approximations. These assumptions are not certified by this script.
+HAC does not correct arbitrary nonstationarity. A failure to reject is not equivalence.
+Statistical significance alone does not establish practical or operational importance.
+Runtime comparisons reuse separate runs; tuning budgets differ and this is not a microbenchmark.
+No settings, predictors, forecasts or source files were changed.
+Target remains hourly system demand, not solar-subtracted net load.
+
+Inference-core time: 2.044 seconds
+Analysis elapsed before final packaging: 33.456 seconds
+Return step8_analysis_results.zip for final manuscript and reviewer-response preparation.

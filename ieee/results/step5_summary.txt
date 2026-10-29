@@ -1,0 +1,36 @@
+VA-REN REVISION: STEP 5 FULL EVALUATION
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+
+STEP5_STATUS: PASS
+CHECKPOINT_EQUIVALENCE: PASS
+FULL_PERIOD_FORECASTS_RUN: YES
+FORECAST_ORIGINS: 34343
+CONFIGURED_OUTPUTS: 7
+
+First forecast interval start: 2020-01-31T09:00:00Z
+Last forecast interval start: 2024-01-01T07:00:00Z
+All origins, targets, naive forecasts and model parameter domains passed validation.
+The first 24 full-run forecasts also reproduce the original Step 4 pilot.
+Selected static alpha: 1 (selected once using the initial calibration only).
+LASSO and calibrated StaticEN coincide; FixedEN05 remains the fixed-alpha=.5 control.
+
+One-time static-alpha calibration: 1.709 seconds
+Total recorded per-model forecast-loop fitting time: 24506.884 seconds (6.807 hours)
+Mean / median origin fitting time: 0.714 / 0.651 seconds
+Core cumulative compute time: 24518.087 seconds
+Wall time of the latest full-core invocation: 24664.997 seconds
+Latest invocation started from 0 saved origins; computed 34343 additional origins.
+Latest invocation checkpoint write time: 144.928 seconds
+Latest invocation checkpoint read time: 0.000 seconds
+Run pauses are excluded from core compute/fit timings.
+Compute totals cover retained work; a process crash can leave abandoned work after the last save unrecorded.
+Initial resume-equivalence check and final ZIP packaging are outside full-run fitting times.
+
+Lambda endpoint counts/fractions are retained for review; no grid changes were made.
+Target: hourly system demand, not solar-subtracted net load.
+Historical published actuals may contain revisions; this is not an as-of vintage archive.
+Completed-hour load is assumed available at the next forecast origin.
+Annual lag: 8760 elapsed hours. Calendar predictors: America/Los_Angeles.
+No DM/GW significance tests or nonlinear benchmark are added by this run.
+A successful run is not a finding of accuracy superiority.
+Return step5_full_results.zip for the next results/revision review.

@@ -1,0 +1,587 @@
+
+VA-REN REVISION: STEP 7 FULL NONLINEAR EVALUATION
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+Existing run resumed: 0
+Run folder: /Users/behroozmoosavi/Desktop/ieee/step7_full_tp2b7a8ed2_2b71_4adc_961d_617f7ae720a7
+Model: LSBoost24h. Count tuning every 24 elapsed origins; model refitting every hour.
+All seven tree-count candidates retained. This tuning policy differs from hourly EN tuning.
+Calibration structure: 3 splits, minimum leaf 20, learning rate .1.
+Initial count: 800. Later counts use past-only scheduled tuning.
+
+Preflight 1: independently reproduce the first forecast and expanded calibration.
+LSBoost structure calibration: 1/4; splits=3, leaf=20
+LSBoost structure calibration: 2/4; splits=3, leaf=5
+LSBoost structure calibration: 3/4; splits=15, leaf=20
+LSBoost structure calibration: 4/4; splits=15, leaf=5
+LSBoost chosen structure: splits=3, leaf=20, LearnRate=0.1
+LSBoost: 1/1 origins; UTC 31-Jan-2020 09:00:00; trees=800
+
+Preflight 2: 48 uninterrupted origins with the frozen 24-hour tuning policy.
+LSBoost24h: 1/48 origins; UTC 31-Jan-2020 09:00:00; trees=800; retuned=1
+LSBoost24h: 48/48 origins; UTC 02-Feb-2020 08:00:00; trees=400; retuned=0
+
+Preflight 3: pause after 12 origins, then resume to 48 across the second tuning event.
+LSBoost24h: 1/48 origins; UTC 31-Jan-2020 09:00:00; trees=800; retuned=1
+LSBoost checkpoint committed: 12/48 complete origins.
+LSBoost paused at 12/48; call again with a larger StopAfter to resume.
+LSBoost checkpoint resume: 12/48 complete origins.
+LSBoost checkpoint committed: 24/48 complete origins.
+LSBoost checkpoint committed: 36/48 complete origins.
+LSBoost24h: 48/48 origins; UTC 02-Feb-2020 08:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 48/48 complete origins.
+
+Preflight 4: change the first target and later loads; require the first forecast to stay unchanged.
+CHECKPOINT_EQUIVALENCE: PASS (48 reference; 12 paused then resumed to 48).
+ORIGINAL_CORE_REFERENCE: PASS
+FUTURE_PERTURBATION_CHECK: PASS
+
+Starting/continuing all 34343 common forecast origins.
+Count tuning events: 1431; hourly refits: 34343.
+48-origin preflight planning estimate: 15.42 hours of fitting.
+Estimate excludes checkpoint/output costs, pauses, and later variation in counts or solver cost.
+Checkpoints save every 250 completed origins.
+Resume with: run_varen_step7_full('/Users/behroozmoosavi/Desktop/ieee/step7_full_tp2b7a8ed2_2b71_4adc_961d_617f7ae720a7')
+
+LSBoost24h: 1/34343 origins; UTC 31-Jan-2020 09:00:00; trees=800; retuned=1
+LSBoost24h: 100/34343 origins; UTC 04-Feb-2020 12:00:00; trees=1600; retuned=0
+LSBoost24h: 200/34343 origins; UTC 08-Feb-2020 16:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 250/34343 complete origins.
+LSBoost24h: 300/34343 origins; UTC 12-Feb-2020 20:00:00; trees=800; retuned=0
+LSBoost24h: 400/34343 origins; UTC 17-Feb-2020; trees=800; retuned=0
+LSBoost24h: 500/34343 origins; UTC 21-Feb-2020 04:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 500/34343 complete origins.
+LSBoost24h: 600/34343 origins; UTC 25-Feb-2020 08:00:00; trees=400; retuned=0
+LSBoost24h: 700/34343 origins; UTC 29-Feb-2020 12:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 750/34343 complete origins.
+LSBoost24h: 800/34343 origins; UTC 04-Mar-2020 16:00:00; trees=800; retuned=0
+LSBoost24h: 900/34343 origins; UTC 08-Mar-2020 20:00:00; trees=800; retuned=0
+LSBoost24h: 1000/34343 origins; UTC 13-Mar-2020; trees=1600; retuned=0
+LSBoost checkpoint committed: 1000/34343 complete origins.
+LSBoost24h: 1100/34343 origins; UTC 17-Mar-2020 04:00:00; trees=1600; retuned=0
+LSBoost24h: 1200/34343 origins; UTC 21-Mar-2020 08:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 1250/34343 complete origins.
+LSBoost24h: 1300/34343 origins; UTC 25-Mar-2020 12:00:00; trees=800; retuned=0
+LSBoost24h: 1400/34343 origins; UTC 29-Mar-2020 16:00:00; trees=400; retuned=0
+LSBoost24h: 1500/34343 origins; UTC 02-Apr-2020 20:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 1500/34343 complete origins.
+LSBoost24h: 1600/34343 origins; UTC 07-Apr-2020; trees=800; retuned=0
+LSBoost24h: 1700/34343 origins; UTC 11-Apr-2020 04:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 1750/34343 complete origins.
+LSBoost24h: 1800/34343 origins; UTC 15-Apr-2020 08:00:00; trees=400; retuned=0
+LSBoost24h: 1900/34343 origins; UTC 19-Apr-2020 12:00:00; trees=800; retuned=0
+LSBoost24h: 2000/34343 origins; UTC 23-Apr-2020 16:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 2000/34343 complete origins.
+LSBoost24h: 2100/34343 origins; UTC 27-Apr-2020 20:00:00; trees=800; retuned=0
+LSBoost24h: 2200/34343 origins; UTC 02-May-2020; trees=400; retuned=0
+LSBoost checkpoint committed: 2250/34343 complete origins.
+LSBoost24h: 2300/34343 origins; UTC 06-May-2020 04:00:00; trees=400; retuned=0
+LSBoost24h: 2400/34343 origins; UTC 10-May-2020 08:00:00; trees=400; retuned=0
+LSBoost24h: 2500/34343 origins; UTC 14-May-2020 12:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 2500/34343 complete origins.
+LSBoost24h: 2600/34343 origins; UTC 18-May-2020 16:00:00; trees=200; retuned=0
+LSBoost24h: 2700/34343 origins; UTC 22-May-2020 20:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 2750/34343 complete origins.
+LSBoost24h: 2800/34343 origins; UTC 27-May-2020; trees=400; retuned=0
+LSBoost24h: 2900/34343 origins; UTC 31-May-2020 04:00:00; trees=800; retuned=0
+LSBoost24h: 3000/34343 origins; UTC 04-Jun-2020 08:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 3000/34343 complete origins.
+LSBoost24h: 3100/34343 origins; UTC 08-Jun-2020 12:00:00; trees=800; retuned=0
+LSBoost24h: 3200/34343 origins; UTC 12-Jun-2020 16:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 3250/34343 complete origins.
+LSBoost24h: 3300/34343 origins; UTC 16-Jun-2020 20:00:00; trees=800; retuned=0
+LSBoost24h: 3400/34343 origins; UTC 21-Jun-2020; trees=400; retuned=0
+LSBoost24h: 3500/34343 origins; UTC 25-Jun-2020 04:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 3500/34343 complete origins.
+LSBoost24h: 3600/34343 origins; UTC 29-Jun-2020 08:00:00; trees=400; retuned=0
+LSBoost24h: 3700/34343 origins; UTC 03-Jul-2020 12:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 3750/34343 complete origins.
+LSBoost24h: 3800/34343 origins; UTC 07-Jul-2020 16:00:00; trees=200; retuned=0
+LSBoost24h: 3900/34343 origins; UTC 11-Jul-2020 20:00:00; trees=200; retuned=0
+LSBoost24h: 4000/34343 origins; UTC 16-Jul-2020; trees=400; retuned=0
+LSBoost checkpoint committed: 4000/34343 complete origins.
+LSBoost24h: 4100/34343 origins; UTC 20-Jul-2020 04:00:00; trees=400; retuned=0
+LSBoost24h: 4200/34343 origins; UTC 24-Jul-2020 08:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 4250/34343 complete origins.
+LSBoost24h: 4300/34343 origins; UTC 28-Jul-2020 12:00:00; trees=200; retuned=0
+LSBoost24h: 4400/34343 origins; UTC 01-Aug-2020 16:00:00; trees=400; retuned=0
+LSBoost24h: 4500/34343 origins; UTC 05-Aug-2020 20:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 4500/34343 complete origins.
+LSBoost24h: 4600/34343 origins; UTC 10-Aug-2020; trees=1600; retuned=0
+LSBoost24h: 4700/34343 origins; UTC 14-Aug-2020 04:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 4750/34343 complete origins.
+LSBoost24h: 4800/34343 origins; UTC 18-Aug-2020 08:00:00; trees=800; retuned=0
+LSBoost24h: 4900/34343 origins; UTC 22-Aug-2020 12:00:00; trees=200; retuned=0
+LSBoost24h: 5000/34343 origins; UTC 26-Aug-2020 16:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 5000/34343 complete origins.
+LSBoost24h: 5100/34343 origins; UTC 30-Aug-2020 20:00:00; trees=200; retuned=0
+LSBoost24h: 5200/34343 origins; UTC 04-Sep-2020; trees=400; retuned=0
+LSBoost checkpoint committed: 5250/34343 complete origins.
+LSBoost24h: 5300/34343 origins; UTC 08-Sep-2020 04:00:00; trees=800; retuned=0
+LSBoost24h: 5400/34343 origins; UTC 12-Sep-2020 08:00:00; trees=800; retuned=0
+LSBoost24h: 5500/34343 origins; UTC 16-Sep-2020 12:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 5500/34343 complete origins.
+LSBoost24h: 5600/34343 origins; UTC 20-Sep-2020 16:00:00; trees=1600; retuned=0
+LSBoost24h: 5700/34343 origins; UTC 24-Sep-2020 20:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 5750/34343 complete origins.
+LSBoost24h: 5800/34343 origins; UTC 29-Sep-2020; trees=1600; retuned=0
+LSBoost24h: 5900/34343 origins; UTC 03-Oct-2020 04:00:00; trees=800; retuned=0
+LSBoost24h: 6000/34343 origins; UTC 07-Oct-2020 08:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 6000/34343 complete origins.
+LSBoost24h: 6100/34343 origins; UTC 11-Oct-2020 12:00:00; trees=400; retuned=0
+LSBoost24h: 6200/34343 origins; UTC 15-Oct-2020 16:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 6250/34343 complete origins.
+LSBoost24h: 6300/34343 origins; UTC 19-Oct-2020 20:00:00; trees=1600; retuned=0
+LSBoost24h: 6400/34343 origins; UTC 24-Oct-2020; trees=1600; retuned=0
+LSBoost24h: 6500/34343 origins; UTC 28-Oct-2020 04:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 6500/34343 complete origins.
+LSBoost24h: 6600/34343 origins; UTC 01-Nov-2020 08:00:00; trees=400; retuned=0
+LSBoost24h: 6700/34343 origins; UTC 05-Nov-2020 12:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 6750/34343 complete origins.
+LSBoost24h: 6800/34343 origins; UTC 09-Nov-2020 16:00:00; trees=1600; retuned=0
+LSBoost24h: 6900/34343 origins; UTC 13-Nov-2020 20:00:00; trees=1600; retuned=0
+LSBoost24h: 7000/34343 origins; UTC 18-Nov-2020; trees=1600; retuned=0
+LSBoost checkpoint committed: 7000/34343 complete origins.
+LSBoost24h: 7100/34343 origins; UTC 22-Nov-2020 04:00:00; trees=800; retuned=0
+LSBoost24h: 7200/34343 origins; UTC 26-Nov-2020 08:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 7250/34343 complete origins.
+LSBoost24h: 7300/34343 origins; UTC 30-Nov-2020 12:00:00; trees=400; retuned=0
+LSBoost24h: 7400/34343 origins; UTC 04-Dec-2020 16:00:00; trees=400; retuned=0
+LSBoost24h: 7500/34343 origins; UTC 08-Dec-2020 20:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 7500/34343 complete origins.
+LSBoost24h: 7600/34343 origins; UTC 13-Dec-2020; trees=800; retuned=0
+LSBoost24h: 7700/34343 origins; UTC 17-Dec-2020 04:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 7750/34343 complete origins.
+LSBoost24h: 7800/34343 origins; UTC 21-Dec-2020 08:00:00; trees=800; retuned=0
+LSBoost24h: 7900/34343 origins; UTC 25-Dec-2020 12:00:00; trees=1600; retuned=0
+LSBoost24h: 8000/34343 origins; UTC 29-Dec-2020 16:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 8000/34343 complete origins.
+LSBoost24h: 8100/34343 origins; UTC 02-Jan-2021 20:00:00; trees=1600; retuned=0
+LSBoost24h: 8200/34343 origins; UTC 07-Jan-2021; trees=1600; retuned=0
+LSBoost checkpoint committed: 8250/34343 complete origins.
+LSBoost24h: 8300/34343 origins; UTC 11-Jan-2021 04:00:00; trees=1600; retuned=0
+LSBoost24h: 8400/34343 origins; UTC 15-Jan-2021 08:00:00; trees=1600; retuned=0
+LSBoost24h: 8500/34343 origins; UTC 19-Jan-2021 12:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 8500/34343 complete origins.
+LSBoost24h: 8600/34343 origins; UTC 23-Jan-2021 16:00:00; trees=400; retuned=0
+LSBoost24h: 8700/34343 origins; UTC 27-Jan-2021 20:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 8750/34343 complete origins.
+LSBoost24h: 8800/34343 origins; UTC 01-Feb-2021; trees=1600; retuned=0
+LSBoost24h: 8900/34343 origins; UTC 05-Feb-2021 04:00:00; trees=1600; retuned=0
+LSBoost24h: 9000/34343 origins; UTC 09-Feb-2021 08:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 9000/34343 complete origins.
+LSBoost24h: 9100/34343 origins; UTC 13-Feb-2021 12:00:00; trees=400; retuned=0
+LSBoost24h: 9200/34343 origins; UTC 17-Feb-2021 16:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 9250/34343 complete origins.
+LSBoost24h: 9300/34343 origins; UTC 21-Feb-2021 20:00:00; trees=800; retuned=0
+LSBoost24h: 9400/34343 origins; UTC 26-Feb-2021; trees=800; retuned=0
+LSBoost24h: 9500/34343 origins; UTC 02-Mar-2021 04:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 9500/34343 complete origins.
+LSBoost24h: 9600/34343 origins; UTC 06-Mar-2021 08:00:00; trees=400; retuned=0
+LSBoost24h: 9700/34343 origins; UTC 10-Mar-2021 12:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 9750/34343 complete origins.
+LSBoost24h: 9800/34343 origins; UTC 14-Mar-2021 16:00:00; trees=200; retuned=0
+LSBoost24h: 9900/34343 origins; UTC 18-Mar-2021 20:00:00; trees=800; retuned=0
+LSBoost24h: 10000/34343 origins; UTC 23-Mar-2021; trees=400; retuned=0
+LSBoost checkpoint committed: 10000/34343 complete origins.
+LSBoost24h: 10100/34343 origins; UTC 27-Mar-2021 04:00:00; trees=400; retuned=0
+LSBoost24h: 10200/34343 origins; UTC 31-Mar-2021 08:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 10250/34343 complete origins.
+LSBoost24h: 10300/34343 origins; UTC 04-Apr-2021 12:00:00; trees=200; retuned=0
+LSBoost24h: 10400/34343 origins; UTC 08-Apr-2021 16:00:00; trees=400; retuned=0
+LSBoost24h: 10500/34343 origins; UTC 12-Apr-2021 20:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 10500/34343 complete origins.
+LSBoost24h: 10600/34343 origins; UTC 17-Apr-2021; trees=1600; retuned=0
+LSBoost24h: 10700/34343 origins; UTC 21-Apr-2021 04:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 10750/34343 complete origins.
+LSBoost24h: 10800/34343 origins; UTC 25-Apr-2021 08:00:00; trees=800; retuned=0
+LSBoost24h: 10900/34343 origins; UTC 29-Apr-2021 12:00:00; trees=800; retuned=0
+LSBoost24h: 11000/34343 origins; UTC 03-May-2021 16:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 11000/34343 complete origins.
+LSBoost24h: 11100/34343 origins; UTC 07-May-2021 20:00:00; trees=800; retuned=0
+LSBoost24h: 11200/34343 origins; UTC 12-May-2021; trees=800; retuned=0
+LSBoost checkpoint committed: 11250/34343 complete origins.
+LSBoost24h: 11300/34343 origins; UTC 16-May-2021 04:00:00; trees=400; retuned=0
+LSBoost24h: 11400/34343 origins; UTC 20-May-2021 08:00:00; trees=400; retuned=0
+LSBoost24h: 11500/34343 origins; UTC 24-May-2021 12:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 11500/34343 complete origins.
+LSBoost24h: 11600/34343 origins; UTC 28-May-2021 16:00:00; trees=400; retuned=0
+LSBoost24h: 11700/34343 origins; UTC 01-Jun-2021 20:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 11750/34343 complete origins.
+LSBoost24h: 11800/34343 origins; UTC 06-Jun-2021; trees=400; retuned=0
+LSBoost24h: 11900/34343 origins; UTC 10-Jun-2021 04:00:00; trees=400; retuned=0
+LSBoost24h: 12000/34343 origins; UTC 14-Jun-2021 08:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 12000/34343 complete origins.
+LSBoost24h: 12100/34343 origins; UTC 18-Jun-2021 12:00:00; trees=400; retuned=0
+LSBoost24h: 12200/34343 origins; UTC 22-Jun-2021 16:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 12250/34343 complete origins.
+LSBoost24h: 12300/34343 origins; UTC 26-Jun-2021 20:00:00; trees=200; retuned=0
+LSBoost24h: 12400/34343 origins; UTC 01-Jul-2021; trees=200; retuned=0
+LSBoost24h: 12500/34343 origins; UTC 05-Jul-2021 04:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 12500/34343 complete origins.
+LSBoost24h: 12600/34343 origins; UTC 09-Jul-2021 08:00:00; trees=100; retuned=0
+LSBoost24h: 12700/34343 origins; UTC 13-Jul-2021 12:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 12750/34343 complete origins.
+LSBoost24h: 12800/34343 origins; UTC 17-Jul-2021 16:00:00; trees=400; retuned=0
+LSBoost24h: 12900/34343 origins; UTC 21-Jul-2021 20:00:00; trees=200; retuned=0
+LSBoost24h: 13000/34343 origins; UTC 26-Jul-2021; trees=400; retuned=0
+LSBoost checkpoint committed: 13000/34343 complete origins.
+LSBoost24h: 13100/34343 origins; UTC 30-Jul-2021 04:00:00; trees=200; retuned=0
+LSBoost24h: 13200/34343 origins; UTC 03-Aug-2021 08:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 13250/34343 complete origins.
+LSBoost24h: 13300/34343 origins; UTC 07-Aug-2021 12:00:00; trees=400; retuned=0
+LSBoost24h: 13400/34343 origins; UTC 11-Aug-2021 16:00:00; trees=200; retuned=0
+LSBoost24h: 13500/34343 origins; UTC 15-Aug-2021 20:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 13500/34343 complete origins.
+LSBoost24h: 13600/34343 origins; UTC 20-Aug-2021; trees=400; retuned=0
+LSBoost24h: 13700/34343 origins; UTC 24-Aug-2021 04:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 13750/34343 complete origins.
+LSBoost24h: 13800/34343 origins; UTC 28-Aug-2021 08:00:00; trees=1600; retuned=0
+LSBoost24h: 13900/34343 origins; UTC 01-Sep-2021 12:00:00; trees=1600; retuned=0
+LSBoost24h: 14000/34343 origins; UTC 05-Sep-2021 16:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 14000/34343 complete origins.
+LSBoost24h: 14100/34343 origins; UTC 09-Sep-2021 20:00:00; trees=200; retuned=0
+LSBoost24h: 14200/34343 origins; UTC 14-Sep-2021; trees=100; retuned=0
+LSBoost checkpoint committed: 14250/34343 complete origins.
+LSBoost24h: 14300/34343 origins; UTC 18-Sep-2021 04:00:00; trees=200; retuned=0
+LSBoost24h: 14400/34343 origins; UTC 22-Sep-2021 08:00:00; trees=200; retuned=0
+LSBoost24h: 14500/34343 origins; UTC 26-Sep-2021 12:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 14500/34343 complete origins.
+LSBoost24h: 14600/34343 origins; UTC 30-Sep-2021 16:00:00; trees=400; retuned=0
+LSBoost24h: 14700/34343 origins; UTC 04-Oct-2021 20:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 14750/34343 complete origins.
+LSBoost24h: 14800/34343 origins; UTC 09-Oct-2021; trees=400; retuned=0
+LSBoost24h: 14900/34343 origins; UTC 13-Oct-2021 04:00:00; trees=400; retuned=0
+LSBoost24h: 15000/34343 origins; UTC 17-Oct-2021 08:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 15000/34343 complete origins.
+LSBoost24h: 15100/34343 origins; UTC 21-Oct-2021 12:00:00; trees=800; retuned=0
+LSBoost24h: 15200/34343 origins; UTC 25-Oct-2021 16:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 15250/34343 complete origins.
+LSBoost24h: 15300/34343 origins; UTC 29-Oct-2021 20:00:00; trees=800; retuned=0
+LSBoost24h: 15400/34343 origins; UTC 03-Nov-2021; trees=800; retuned=0
+LSBoost24h: 15500/34343 origins; UTC 07-Nov-2021 04:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 15500/34343 complete origins.
+LSBoost24h: 15600/34343 origins; UTC 11-Nov-2021 08:00:00; trees=400; retuned=0
+LSBoost24h: 15700/34343 origins; UTC 15-Nov-2021 12:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 15750/34343 complete origins.
+LSBoost24h: 15800/34343 origins; UTC 19-Nov-2021 16:00:00; trees=400; retuned=0
+LSBoost24h: 15900/34343 origins; UTC 23-Nov-2021 20:00:00; trees=1600; retuned=0
+LSBoost24h: 16000/34343 origins; UTC 28-Nov-2021; trees=800; retuned=0
+LSBoost checkpoint committed: 16000/34343 complete origins.
+LSBoost24h: 16100/34343 origins; UTC 02-Dec-2021 04:00:00; trees=200; retuned=0
+LSBoost24h: 16200/34343 origins; UTC 06-Dec-2021 08:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 16250/34343 complete origins.
+LSBoost24h: 16300/34343 origins; UTC 10-Dec-2021 12:00:00; trees=200; retuned=0
+LSBoost24h: 16400/34343 origins; UTC 14-Dec-2021 16:00:00; trees=400; retuned=0
+LSBoost24h: 16500/34343 origins; UTC 18-Dec-2021 20:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 16500/34343 complete origins.
+LSBoost24h: 16600/34343 origins; UTC 23-Dec-2021; trees=800; retuned=0
+LSBoost24h: 16700/34343 origins; UTC 27-Dec-2021 04:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 16750/34343 complete origins.
+LSBoost24h: 16800/34343 origins; UTC 31-Dec-2021 08:00:00; trees=800; retuned=0
+LSBoost24h: 16900/34343 origins; UTC 04-Jan-2022 12:00:00; trees=1600; retuned=0
+LSBoost24h: 17000/34343 origins; UTC 08-Jan-2022 16:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 17000/34343 complete origins.
+LSBoost24h: 17100/34343 origins; UTC 12-Jan-2022 20:00:00; trees=400; retuned=0
+LSBoost24h: 17200/34343 origins; UTC 17-Jan-2022; trees=800; retuned=0
+LSBoost checkpoint committed: 17250/34343 complete origins.
+LSBoost24h: 17300/34343 origins; UTC 21-Jan-2022 04:00:00; trees=400; retuned=0
+LSBoost24h: 17400/34343 origins; UTC 25-Jan-2022 08:00:00; trees=800; retuned=0
+LSBoost24h: 17500/34343 origins; UTC 29-Jan-2022 12:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 17500/34343 complete origins.
+LSBoost24h: 17600/34343 origins; UTC 02-Feb-2022 16:00:00; trees=1600; retuned=0
+LSBoost24h: 17700/34343 origins; UTC 06-Feb-2022 20:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 17750/34343 complete origins.
+LSBoost24h: 17800/34343 origins; UTC 11-Feb-2022; trees=800; retuned=0
+LSBoost24h: 17900/34343 origins; UTC 15-Feb-2022 04:00:00; trees=800; retuned=0
+LSBoost24h: 18000/34343 origins; UTC 19-Feb-2022 08:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 18000/34343 complete origins.
+LSBoost24h: 18100/34343 origins; UTC 23-Feb-2022 12:00:00; trees=400; retuned=0
+LSBoost24h: 18200/34343 origins; UTC 27-Feb-2022 16:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 18250/34343 complete origins.
+LSBoost24h: 18300/34343 origins; UTC 03-Mar-2022 20:00:00; trees=1600; retuned=0
+LSBoost24h: 18400/34343 origins; UTC 08-Mar-2022; trees=800; retuned=0
+LSBoost24h: 18500/34343 origins; UTC 12-Mar-2022 04:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 18500/34343 complete origins.
+LSBoost24h: 18600/34343 origins; UTC 16-Mar-2022 08:00:00; trees=1600; retuned=0
+LSBoost24h: 18700/34343 origins; UTC 20-Mar-2022 12:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 18750/34343 complete origins.
+LSBoost24h: 18800/34343 origins; UTC 24-Mar-2022 16:00:00; trees=400; retuned=0
+LSBoost24h: 18900/34343 origins; UTC 28-Mar-2022 20:00:00; trees=800; retuned=0
+LSBoost24h: 19000/34343 origins; UTC 02-Apr-2022; trees=800; retuned=0
+LSBoost checkpoint committed: 19000/34343 complete origins.
+LSBoost24h: 19100/34343 origins; UTC 06-Apr-2022 04:00:00; trees=800; retuned=0
+LSBoost24h: 19200/34343 origins; UTC 10-Apr-2022 08:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 19250/34343 complete origins.
+LSBoost24h: 19300/34343 origins; UTC 14-Apr-2022 12:00:00; trees=800; retuned=0
+LSBoost24h: 19400/34343 origins; UTC 18-Apr-2022 16:00:00; trees=800; retuned=0
+LSBoost24h: 19500/34343 origins; UTC 22-Apr-2022 20:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 19500/34343 complete origins.
+LSBoost24h: 19600/34343 origins; UTC 27-Apr-2022; trees=400; retuned=0
+LSBoost24h: 19700/34343 origins; UTC 01-May-2022 04:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 19750/34343 complete origins.
+LSBoost24h: 19800/34343 origins; UTC 05-May-2022 08:00:00; trees=200; retuned=0
+LSBoost24h: 19900/34343 origins; UTC 09-May-2022 12:00:00; trees=1600; retuned=0
+LSBoost24h: 20000/34343 origins; UTC 13-May-2022 16:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 20000/34343 complete origins.
+LSBoost24h: 20100/34343 origins; UTC 17-May-2022 20:00:00; trees=1600; retuned=0
+LSBoost24h: 20200/34343 origins; UTC 22-May-2022; trees=400; retuned=0
+LSBoost checkpoint committed: 20250/34343 complete origins.
+LSBoost24h: 20300/34343 origins; UTC 26-May-2022 04:00:00; trees=1600; retuned=0
+LSBoost24h: 20400/34343 origins; UTC 30-May-2022 08:00:00; trees=1600; retuned=0
+LSBoost24h: 20500/34343 origins; UTC 03-Jun-2022 12:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 20500/34343 complete origins.
+LSBoost24h: 20600/34343 origins; UTC 07-Jun-2022 16:00:00; trees=400; retuned=0
+LSBoost24h: 20700/34343 origins; UTC 11-Jun-2022 20:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 20750/34343 complete origins.
+LSBoost24h: 20800/34343 origins; UTC 16-Jun-2022; trees=100; retuned=0
+LSBoost24h: 20900/34343 origins; UTC 20-Jun-2022 04:00:00; trees=400; retuned=0
+LSBoost24h: 21000/34343 origins; UTC 24-Jun-2022 08:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 21000/34343 complete origins.
+LSBoost24h: 21100/34343 origins; UTC 28-Jun-2022 12:00:00; trees=800; retuned=0
+LSBoost24h: 21200/34343 origins; UTC 02-Jul-2022 16:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 21250/34343 complete origins.
+LSBoost24h: 21300/34343 origins; UTC 06-Jul-2022 20:00:00; trees=200; retuned=0
+LSBoost24h: 21400/34343 origins; UTC 11-Jul-2022; trees=400; retuned=0
+LSBoost24h: 21500/34343 origins; UTC 15-Jul-2022 04:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 21500/34343 complete origins.
+LSBoost24h: 21600/34343 origins; UTC 19-Jul-2022 08:00:00; trees=400; retuned=0
+LSBoost24h: 21700/34343 origins; UTC 23-Jul-2022 12:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 21750/34343 complete origins.
+LSBoost24h: 21800/34343 origins; UTC 27-Jul-2022 16:00:00; trees=200; retuned=0
+LSBoost24h: 21900/34343 origins; UTC 31-Jul-2022 20:00:00; trees=400; retuned=0
+LSBoost24h: 22000/34343 origins; UTC 05-Aug-2022; trees=200; retuned=0
+LSBoost checkpoint committed: 22000/34343 complete origins.
+LSBoost24h: 22100/34343 origins; UTC 09-Aug-2022 04:00:00; trees=400; retuned=0
+LSBoost24h: 22200/34343 origins; UTC 13-Aug-2022 08:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 22250/34343 complete origins.
+LSBoost24h: 22300/34343 origins; UTC 17-Aug-2022 12:00:00; trees=400; retuned=0
+LSBoost24h: 22400/34343 origins; UTC 21-Aug-2022 16:00:00; trees=200; retuned=0
+LSBoost24h: 22500/34343 origins; UTC 25-Aug-2022 20:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 22500/34343 complete origins.
+LSBoost24h: 22600/34343 origins; UTC 30-Aug-2022; trees=200; retuned=0
+LSBoost24h: 22700/34343 origins; UTC 03-Sep-2022 04:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 22750/34343 complete origins.
+LSBoost24h: 22800/34343 origins; UTC 07-Sep-2022 08:00:00; trees=400; retuned=0
+LSBoost24h: 22900/34343 origins; UTC 11-Sep-2022 12:00:00; trees=800; retuned=0
+LSBoost24h: 23000/34343 origins; UTC 15-Sep-2022 16:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 23000/34343 complete origins.
+LSBoost24h: 23100/34343 origins; UTC 19-Sep-2022 20:00:00; trees=400; retuned=0
+LSBoost24h: 23200/34343 origins; UTC 24-Sep-2022; trees=400; retuned=0
+LSBoost checkpoint committed: 23250/34343 complete origins.
+LSBoost24h: 23300/34343 origins; UTC 28-Sep-2022 04:00:00; trees=200; retuned=0
+LSBoost24h: 23400/34343 origins; UTC 02-Oct-2022 08:00:00; trees=400; retuned=0
+LSBoost24h: 23500/34343 origins; UTC 06-Oct-2022 12:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 23500/34343 complete origins.
+LSBoost24h: 23600/34343 origins; UTC 10-Oct-2022 16:00:00; trees=200; retuned=0
+LSBoost24h: 23700/34343 origins; UTC 14-Oct-2022 20:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 23750/34343 complete origins.
+LSBoost24h: 23800/34343 origins; UTC 19-Oct-2022; trees=100; retuned=0
+LSBoost24h: 23900/34343 origins; UTC 23-Oct-2022 04:00:00; trees=50; retuned=0
+LSBoost24h: 24000/34343 origins; UTC 27-Oct-2022 08:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 24000/34343 complete origins.
+LSBoost24h: 24100/34343 origins; UTC 31-Oct-2022 12:00:00; trees=100; retuned=0
+LSBoost24h: 24200/34343 origins; UTC 04-Nov-2022 16:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 24250/34343 complete origins.
+LSBoost24h: 24300/34343 origins; UTC 08-Nov-2022 20:00:00; trees=100; retuned=0
+LSBoost24h: 24400/34343 origins; UTC 13-Nov-2022; trees=100; retuned=0
+LSBoost24h: 24500/34343 origins; UTC 17-Nov-2022 04:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 24500/34343 complete origins.
+LSBoost24h: 24600/34343 origins; UTC 21-Nov-2022 08:00:00; trees=200; retuned=0
+LSBoost24h: 24700/34343 origins; UTC 25-Nov-2022 12:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 24750/34343 complete origins.
+LSBoost24h: 24800/34343 origins; UTC 29-Nov-2022 16:00:00; trees=200; retuned=0
+LSBoost24h: 24900/34343 origins; UTC 03-Dec-2022 20:00:00; trees=200; retuned=0
+LSBoost24h: 25000/34343 origins; UTC 08-Dec-2022; trees=100; retuned=0
+LSBoost checkpoint committed: 25000/34343 complete origins.
+LSBoost24h: 25100/34343 origins; UTC 12-Dec-2022 04:00:00; trees=800; retuned=0
+LSBoost24h: 25200/34343 origins; UTC 16-Dec-2022 08:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 25250/34343 complete origins.
+LSBoost24h: 25300/34343 origins; UTC 20-Dec-2022 12:00:00; trees=200; retuned=0
+LSBoost24h: 25400/34343 origins; UTC 24-Dec-2022 16:00:00; trees=200; retuned=0
+LSBoost24h: 25500/34343 origins; UTC 28-Dec-2022 20:00:00; trees=50; retuned=0
+LSBoost checkpoint committed: 25500/34343 complete origins.
+LSBoost24h: 25600/34343 origins; UTC 02-Jan-2023; trees=50; retuned=0
+LSBoost24h: 25700/34343 origins; UTC 06-Jan-2023 04:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 25750/34343 complete origins.
+LSBoost24h: 25800/34343 origins; UTC 10-Jan-2023 08:00:00; trees=400; retuned=0
+LSBoost24h: 25900/34343 origins; UTC 14-Jan-2023 12:00:00; trees=200; retuned=0
+LSBoost24h: 26000/34343 origins; UTC 18-Jan-2023 16:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 26000/34343 complete origins.
+LSBoost24h: 26100/34343 origins; UTC 22-Jan-2023 20:00:00; trees=200; retuned=0
+LSBoost24h: 26200/34343 origins; UTC 27-Jan-2023; trees=200; retuned=0
+LSBoost checkpoint committed: 26250/34343 complete origins.
+LSBoost24h: 26300/34343 origins; UTC 31-Jan-2023 04:00:00; trees=200; retuned=0
+LSBoost24h: 26400/34343 origins; UTC 04-Feb-2023 08:00:00; trees=100; retuned=0
+LSBoost24h: 26500/34343 origins; UTC 08-Feb-2023 12:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 26500/34343 complete origins.
+LSBoost24h: 26600/34343 origins; UTC 12-Feb-2023 16:00:00; trees=400; retuned=0
+LSBoost24h: 26700/34343 origins; UTC 16-Feb-2023 20:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 26750/34343 complete origins.
+LSBoost24h: 26800/34343 origins; UTC 21-Feb-2023; trees=100; retuned=0
+LSBoost24h: 26900/34343 origins; UTC 25-Feb-2023 04:00:00; trees=100; retuned=0
+LSBoost24h: 27000/34343 origins; UTC 01-Mar-2023 08:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 27000/34343 complete origins.
+LSBoost24h: 27100/34343 origins; UTC 05-Mar-2023 12:00:00; trees=800; retuned=0
+LSBoost24h: 27200/34343 origins; UTC 09-Mar-2023 16:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 27250/34343 complete origins.
+LSBoost24h: 27300/34343 origins; UTC 13-Mar-2023 20:00:00; trees=400; retuned=0
+LSBoost24h: 27400/34343 origins; UTC 18-Mar-2023; trees=200; retuned=0
+LSBoost24h: 27500/34343 origins; UTC 22-Mar-2023 04:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 27500/34343 complete origins.
+LSBoost24h: 27600/34343 origins; UTC 26-Mar-2023 08:00:00; trees=200; retuned=0
+LSBoost24h: 27700/34343 origins; UTC 30-Mar-2023 12:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 27750/34343 complete origins.
+LSBoost24h: 27800/34343 origins; UTC 03-Apr-2023 16:00:00; trees=400; retuned=0
+LSBoost24h: 27900/34343 origins; UTC 07-Apr-2023 20:00:00; trees=100; retuned=0
+LSBoost24h: 28000/34343 origins; UTC 12-Apr-2023; trees=200; retuned=0
+LSBoost checkpoint committed: 28000/34343 complete origins.
+LSBoost24h: 28100/34343 origins; UTC 16-Apr-2023 04:00:00; trees=200; retuned=0
+LSBoost24h: 28200/34343 origins; UTC 20-Apr-2023 08:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 28250/34343 complete origins.
+LSBoost24h: 28300/34343 origins; UTC 24-Apr-2023 12:00:00; trees=200; retuned=0
+LSBoost24h: 28400/34343 origins; UTC 28-Apr-2023 16:00:00; trees=200; retuned=0
+LSBoost24h: 28500/34343 origins; UTC 02-May-2023 20:00:00; trees=800; retuned=0
+LSBoost checkpoint committed: 28500/34343 complete origins.
+LSBoost24h: 28600/34343 origins; UTC 07-May-2023; trees=1600; retuned=0
+LSBoost24h: 28700/34343 origins; UTC 11-May-2023 04:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 28750/34343 complete origins.
+LSBoost24h: 28800/34343 origins; UTC 15-May-2023 08:00:00; trees=200; retuned=0
+LSBoost24h: 28900/34343 origins; UTC 19-May-2023 12:00:00; trees=100; retuned=0
+LSBoost24h: 29000/34343 origins; UTC 23-May-2023 16:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 29000/34343 complete origins.
+LSBoost24h: 29100/34343 origins; UTC 27-May-2023 20:00:00; trees=200; retuned=0
+LSBoost24h: 29200/34343 origins; UTC 01-Jun-2023; trees=100; retuned=0
+LSBoost checkpoint committed: 29250/34343 complete origins.
+LSBoost24h: 29300/34343 origins; UTC 05-Jun-2023 04:00:00; trees=100; retuned=0
+LSBoost24h: 29400/34343 origins; UTC 09-Jun-2023 08:00:00; trees=100; retuned=0
+LSBoost24h: 29500/34343 origins; UTC 13-Jun-2023 12:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 29500/34343 complete origins.
+LSBoost24h: 29600/34343 origins; UTC 17-Jun-2023 16:00:00; trees=200; retuned=0
+LSBoost24h: 29700/34343 origins; UTC 21-Jun-2023 20:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 29750/34343 complete origins.
+LSBoost24h: 29800/34343 origins; UTC 26-Jun-2023; trees=200; retuned=0
+LSBoost24h: 29900/34343 origins; UTC 30-Jun-2023 04:00:00; trees=200; retuned=0
+LSBoost24h: 30000/34343 origins; UTC 04-Jul-2023 08:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 30000/34343 complete origins.
+LSBoost24h: 30100/34343 origins; UTC 08-Jul-2023 12:00:00; trees=400; retuned=0
+LSBoost24h: 30200/34343 origins; UTC 12-Jul-2023 16:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 30250/34343 complete origins.
+LSBoost24h: 30300/34343 origins; UTC 16-Jul-2023 20:00:00; trees=400; retuned=0
+LSBoost24h: 30400/34343 origins; UTC 21-Jul-2023; trees=200; retuned=0
+LSBoost24h: 30500/34343 origins; UTC 25-Jul-2023 04:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 30500/34343 complete origins.
+LSBoost24h: 30600/34343 origins; UTC 29-Jul-2023 08:00:00; trees=400; retuned=0
+LSBoost24h: 30700/34343 origins; UTC 02-Aug-2023 12:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 30750/34343 complete origins.
+LSBoost24h: 30800/34343 origins; UTC 06-Aug-2023 16:00:00; trees=400; retuned=0
+LSBoost24h: 30900/34343 origins; UTC 10-Aug-2023 20:00:00; trees=400; retuned=0
+LSBoost24h: 31000/34343 origins; UTC 15-Aug-2023; trees=200; retuned=0
+LSBoost checkpoint committed: 31000/34343 complete origins.
+LSBoost24h: 31100/34343 origins; UTC 19-Aug-2023 04:00:00; trees=200; retuned=0
+LSBoost24h: 31200/34343 origins; UTC 23-Aug-2023 08:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 31250/34343 complete origins.
+LSBoost24h: 31300/34343 origins; UTC 27-Aug-2023 12:00:00; trees=200; retuned=0
+LSBoost24h: 31400/34343 origins; UTC 31-Aug-2023 16:00:00; trees=400; retuned=0
+LSBoost24h: 31500/34343 origins; UTC 04-Sep-2023 20:00:00; trees=1600; retuned=0
+LSBoost checkpoint committed: 31500/34343 complete origins.
+LSBoost24h: 31600/34343 origins; UTC 09-Sep-2023; trees=100; retuned=0
+LSBoost24h: 31700/34343 origins; UTC 13-Sep-2023 04:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 31750/34343 complete origins.
+LSBoost24h: 31800/34343 origins; UTC 17-Sep-2023 08:00:00; trees=200; retuned=0
+LSBoost24h: 31900/34343 origins; UTC 21-Sep-2023 12:00:00; trees=200; retuned=0
+LSBoost24h: 32000/34343 origins; UTC 25-Sep-2023 16:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 32000/34343 complete origins.
+LSBoost24h: 32100/34343 origins; UTC 29-Sep-2023 20:00:00; trees=100; retuned=0
+LSBoost24h: 32200/34343 origins; UTC 04-Oct-2023; trees=800; retuned=0
+LSBoost checkpoint committed: 32250/34343 complete origins.
+LSBoost24h: 32300/34343 origins; UTC 08-Oct-2023 04:00:00; trees=200; retuned=0
+LSBoost24h: 32400/34343 origins; UTC 12-Oct-2023 08:00:00; trees=400; retuned=0
+LSBoost24h: 32500/34343 origins; UTC 16-Oct-2023 12:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 32500/34343 complete origins.
+LSBoost24h: 32600/34343 origins; UTC 20-Oct-2023 16:00:00; trees=200; retuned=0
+LSBoost24h: 32700/34343 origins; UTC 24-Oct-2023 20:00:00; trees=400; retuned=0
+LSBoost checkpoint committed: 32750/34343 complete origins.
+LSBoost24h: 32800/34343 origins; UTC 29-Oct-2023; trees=200; retuned=0
+LSBoost24h: 32900/34343 origins; UTC 02-Nov-2023 04:00:00; trees=200; retuned=0
+LSBoost24h: 33000/34343 origins; UTC 06-Nov-2023 08:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 33000/34343 complete origins.
+LSBoost24h: 33100/34343 origins; UTC 10-Nov-2023 12:00:00; trees=100; retuned=0
+LSBoost24h: 33200/34343 origins; UTC 14-Nov-2023 16:00:00; trees=200; retuned=0
+LSBoost checkpoint committed: 33250/34343 complete origins.
+LSBoost24h: 33300/34343 origins; UTC 18-Nov-2023 20:00:00; trees=50; retuned=0
+LSBoost24h: 33400/34343 origins; UTC 23-Nov-2023; trees=100; retuned=0
+LSBoost24h: 33500/34343 origins; UTC 27-Nov-2023 04:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 33500/34343 complete origins.
+LSBoost24h: 33600/34343 origins; UTC 01-Dec-2023 08:00:00; trees=200; retuned=0
+LSBoost24h: 33700/34343 origins; UTC 05-Dec-2023 12:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 33750/34343 complete origins.
+LSBoost24h: 33800/34343 origins; UTC 09-Dec-2023 16:00:00; trees=100; retuned=0
+LSBoost24h: 33900/34343 origins; UTC 13-Dec-2023 20:00:00; trees=100; retuned=0
+LSBoost24h: 34000/34343 origins; UTC 18-Dec-2023; trees=100; retuned=0
+LSBoost checkpoint committed: 34000/34343 complete origins.
+LSBoost24h: 34100/34343 origins; UTC 22-Dec-2023 04:00:00; trees=100; retuned=0
+LSBoost24h: 34200/34343 origins; UTC 26-Dec-2023 08:00:00; trees=100; retuned=0
+LSBoost checkpoint committed: 34250/34343 complete origins.
+LSBoost24h: 34300/34343 origins; UTC 30-Dec-2023 12:00:00; trees=25; retuned=0
+LSBoost24h: 34343/34343 origins; UTC 01-Jan-2024 07:00:00; trees=25; retuned=0
+LSBoost checkpoint committed: 34343/34343 complete origins.
+
+VA-REN REVISION: STEP 7 FULL NONLINEAR EVALUATION
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+
+STEP7_STATUS: PASS
+CHECKPOINT_EQUIVALENCE: PASS
+ORIGINAL_CORE_REFERENCE: PASS
+FUTURE_PERTURBATION_CHECK: PASS
+FULL_PERIOD_NONLINEAR_FORECASTS_RUN: YES
+FORECAST_ORIGINS: 34343
+NONLINEAR_MODEL: LSBoost24h
+TUNING_EVENTS: 1431
+HOURLY_REFITS: 34343
+
+First forecast interval start: 2020-01-31T09:00:00Z
+Last forecast interval start: 2024-01-01T07:00:00Z
+Fixed structure: max splits 3; minimum leaf 20; learning rate .1.
+Count grid: 25, 50, 100, 200, 400, 800, 1600.
+Count retuned every 24 elapsed origins; model refitted every hour on latest 720 hours.
+This differs from hourly lambda tuning in Step 5 and hourly count tuning in Step 6.
+The frequency decision was based on calibration cost, not evaluation accuracy.
+
+Prior Step 6b calibration: 77.848 seconds (already incurred, not rerun in full loop).
+Full-loop chronological tuning time: 17831.431 seconds
+Full-loop hourly fit/predict time: 32665.840 seconds
+Total recorded nonlinear forecast-loop time: 50498.967 seconds (14.027 hours)
+Core cumulative compute time: 50570.464 seconds
+Latest full-core invocation wall time: 50709.729 seconds
+Latest invocation resumed from 0 origins and computed 34343 additional origins.
+Latest invocation checkpoint write/read time: 138.862 / 0.000 seconds
+Paused time and preflight checks are outside full-loop timings.
+A crash can leave work after the last saved origin unrecorded.
+
+Endpoint rates are reported separately for tuning events and hours using the selected count.
+Eight aligned outputs include the seven saved Step 5 outputs; StaticEN and LASSO coincide.
+Step 5 models are reused without refitting. Combined timings come from separate runs.
+Target: hourly system demand, not solar-subtracted net load.
+Published historical actuals may be revised; completed-hour availability is assumed.
+Annual lag: 8760 elapsed hours. Calendar predictors: America/Los_Angeles.
+No significance tests are performed by this script. A valid run does not establish superiority.
+Return step7_full_results.zip.
+
+          <strong>Model</strong>            <strong>N</strong>      <strong>RMSE_MW</strong>    <strong>MAE_MW</strong>    <strong>MAPE_pct</strong>    <strong>RMSE_Improvement_vsStaticEN_pct</strong>    <strong>RecordedForecastLoopSeconds</strong>
+    <strong>_________________</strong>    <strong>_____</strong>    <strong>_______</strong>    <strong>______</strong>    <strong>________</strong>    <strong>_______________________________</strong>    <strong>___________________________</strong>
+
+    {'Persistence'  }    34343    1050.9     863.15     3.3635                 -347.92                          0.12817          
+    {'SeasonalNaive'}    34343      2738     1766.6     6.6325                   -1067                          0.12073          
+    {'Ridge'        }    34343    236.36     172.66    0.69316                -0.74529                           476.64          
+    {'LASSO'        }    34343    234.62     171.09    0.68764                       0                           5949.8          
+    {'StaticEN'     }    34343    234.62     171.09    0.68764                       0                           5942.2          
+    {'FixedEN05'    }    34343    234.48     170.99    0.68727                0.057063                           5980.8          
+    {'VAREN'        }    34343    234.48        171    0.68724                0.056604                           6157.3          
+    {'LSBoost24h'   }    34343    248.94     183.08    0.73622                 -6.1046                            50499          
+
+       <strong>Denominator</strong>         <strong>N</strong>      <strong>LowerCount</strong>    <strong>UpperCount</strong>    <strong>LowerFraction</strong>    <strong>UpperFraction</strong>
+    <strong>_________________</strong>    <strong>_____</strong>    <strong>__________</strong>    <strong>__________</strong>    <strong>_____________</strong>    <strong>_____________</strong>
+
+    {'TuningEvents' }     1431         2            201         0.0013976         0.14046   
+    {'ForecastHours'}    34343        47           4824         0.0013685         0.14047   
+

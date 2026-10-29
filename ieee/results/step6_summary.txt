@@ -1,0 +1,34 @@
+VA-REN REVISION: STEP 6 NONLINEAR BENCHMARK PILOT
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+
+STEP6_STATUS: PASS
+NONLINEAR_MODEL: LSBoost
+FORECAST_ORIGINS: 24
+FULL_PERIOD_NONLINEAR_FORECASTS_RUN: NO
+PREFIX_PREDICTION_CHECK: PASS
+FUTURE_PERTURBATION_CHECK: PASS
+RNG_RESTORATION_CHECK: PASS
+COMMON_ORIGINS_AND_TARGETS: PASS
+
+First forecast start: 2020-01-31T09:00:00Z
+Last forecast start: 2020-02-01T08:00:00Z
+Selected max splits / min leaf size: 3 / 20
+Fixed learning rate: 0.1
+Cycle candidates: 25, 50, 100, 200; retuned using past-only folds at each origin.
+Lower / upper cycle endpoint selections in pilot: 0 / 24 of 24.
+
+One-time structure calibration: 11.552 seconds
+24-origin forecast-loop time: 49.004 seconds
+Per-origin time mean / median / min / max: 2.042 / 1.984 / 1.902 / 2.476 seconds
+Core call wall time (including prefix check): 61.368 seconds
+Additional future-perturbation check: 12.371 seconds
+Rough full-period serial fitting estimate: 19.48 hours
+Same-machine serial planning estimate: initial calibration once plus 34343 times the pilot mean origin time. Excludes verification, checkpoint/output costs and pauses. Later tree counts and fit costs can differ.
+
+Execution, causality, alignment and runtime pilot only. Do not select settings from these forecast errors. LSBoost is a nonlinear tree benchmark, not XGBoost or LightGBM.
+Step 5 forecasts are reused; this step does not alter the completed linear run.
+Initial calibration losses may diagnose the prespecified grid.
+Pilot forecast errors and later evaluation windows must not redesign it.
+A cycle-boundary selection alone is not an execution failure.
+Target: system demand, not solar-subtracted net load.
+Return step6_nonlinear_pilot_results.zip before a full nonlinear run.

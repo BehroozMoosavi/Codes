@@ -1,0 +1,32 @@
+VA-REN REVISION: STEP 6b CALIBRATION-ONLY GRID AUDIT
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+
+STEP6B_STATUS: PASS
+EVALUATION_FORECASTS_RUN: NO
+FORECAST_ORIGINS: 0
+INITIAL_CALIBRATION_ROWS: 720
+ORIGINAL_CALIBRATION_REPRODUCED: PASS
+PREFIX_PREDICTION_CHECK: PASS
+RNG_RESTORATION_CHECK: PASS
+
+Last raw input interval start: 2020-01-31T08:00:00Z
+First evaluation interval start (excluded): 2020-01-31T09:00:00Z
+Calibration raw rows: 8762:9481. Same five chronological folds as Step 6.
+Tree-count audit grid: 25, 50, 100, 200, 400, 800, 1600.
+Fixed learning rate: 0.1
+Selected calibration structure: max splits 3; minimum leaf 20.
+Selected calibration tree count: 800
+Selected calibration MSE: 40403.152879264 MW^2
+SELECTED_AT_1600_TREE_CAP: NO
+
+Maximum original-candidate MSE difference: 0 MW^2
+Maximum original-fold MSE difference: 0 MW^2
+Calibration time (excluding extra prefix check): 77.848 seconds
+Core call wall time: 78.047 seconds
+
+One bounded pre-forecast calibration audit. The selected candidate minimizes only this calibration loss; it is not an evaluation result or a final rolling-budget decision.
+A cap selection is disclosed; no automatic expansion beyond 1600 occurs.
+No pilot forecast errors or later rolling evaluation windows were used.
+The prior full-run estimate applies to the 200-tree pilot, not this expanded grid.
+Review the calibration curves before freezing a full-run grid and runtime protocol.
+Return step6b_calibration_results.zip.

@@ -1,0 +1,33 @@
+VA-REN REVISION: STEP 4 REAL-DATA PILOT
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+
+STEP4_STATUS: PASS
+FORECAST_ORIGINS: 24
+MODELS: 7
+FULL_PERIOD_FORECASTS_RUN: NO
+
+First forecast interval start: 2020-01-31T09:00:00Z
+Last forecast interval start: 2020-02-01T08:00:00Z
+Expected raw indices: 9482:9505. All 24 local hours represented once.
+All 168 predictions are finite and positive, with common targets and origins.
+Input/target alignment, naive forecasts, past-only variance and alpha checked.
+Full defaults, calibration dates, parameter domains and saved outputs checked.
+
+Core call wall time, including core output writing: 15.820 seconds
+Initial static-alpha calibration: 1.598 seconds
+Summed forecast-loop fitting time: 13.369 seconds
+Per-origin fitting time, mean / median / min / max: 0.557 / 0.548 / 0.507 / 0.627 seconds
+Rough full-period serial fitting estimate: 5.31 hours
+Same-machine serial planning estimate only: static-alpha calibration once plus 34343 times pilot mean per-origin fitting time. Excludes other preprocessing/output costs and does not predict later solver difficulty.
+
+Selected static alpha: 1
+Lambda-endpoint counts are in step4_lambda_endpoints.csv.
+An endpoint warning alone does not fail this execution check.
+Any common-grid change must use only data before the first pilot forecast origin.
+Do not use pilot errors or later rolling windows to redesign that grid.
+
+Execution, alignment and runtime diagnostic only. No accuracy superiority, significance claim or hyperparameter selection from pilot errors.
+Accuracy tables and clock-window subsets are pilot diagnostics only.
+TimestampUTC and TimestampPT in core CSVs are interval STARTS.
+The MAT file retains timezone-aware dates; the extra intervals CSV uses explicit Z.
+Return step4_pilot_results.zip before the full-period forecasting step.

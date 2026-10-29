@@ -1,0 +1,18 @@
+Quantity,MaxAbsoluteDifference,AbsoluteTolerance,Passed
+First forecast against original core,0,1e-07,1
+First tuning scores against original core,0,1e-07,1
+First count against original core,0,0,1
+Resume PredictionMW,0,1e-07,1
+Resume ErrorMW,0,1e-07,1
+Resume NumLearningCycles,0,0,1
+Resume Retuned,0,0,1
+Resume TuningOriginRawIndex,0,0,1
+Resume CycleCVScores,0,1e-07,1
+Resume CycleCVFoldMSE,0,1e-07,1
+Retained prefix predictions,0,0,1
+Retained prefix runtimes,0,0,1
+Retained prefix counts,0,0,1
+Retained tuning origin,0,0,1
+Future perturbation forecast,0,1e-07,1
+Future perturbation tuning,0,1e-07,1
+Future perturbation count,0,0,1

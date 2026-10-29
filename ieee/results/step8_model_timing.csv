@@ -1,0 +1,9 @@
+Model,ForecastOrigins,RecordedLoopSeconds,RecordedLoopHours,MeanSecondsPerOrigin,MedianSecondsPerOrigin,ScheduledTuningEvents,TuningPolicy,OneTimeCalibrationSeconds,TimingContext
+Persistence,34343,0.128169666666666,3.56026851851849e-05,3.73204631705633e-06,5.83333333333333e-07,0,"None",0,Separate recorded runs; differing tuning budgets; not a controlled microbenchmark
+SeasonalNaive,34343,0.120734041666668,3.35372337962966e-05,3.5155356744218e-06,3.33333333333333e-07,0,"None",0,Separate recorded runs; differing tuning budgets; not a controlled microbenchmark
+Ridge,34343,476.637709875,0.132399363854167,0.0138787441363597,0.0133593333333333,34343,"Hourly lambda",0,Separate recorded runs; differing tuning budgets; not a controlled microbenchmark
+LASSO,34343,5949.75291249999,1.65270914236111,0.173244996433043,0.157102,34343,"Hourly lambda",0,Separate recorded runs; differing tuning budgets; not a controlled microbenchmark
+StaticEN,34343,5942.188304,1.65060786222222,0.17302473004688,0.157006458333333,34343,"Hourly lambda",1.70914829166667,Separate recorded runs; differing tuning budgets; not a controlled microbenchmark
+FixedEN05,34343,5980.75217720834,1.66132004922454,0.174147633497608,0.158612916666667,34343,"Hourly lambda",0,Separate recorded runs; differing tuning budgets; not a controlled microbenchmark
+VAREN,34343,6157.30366200001,1.71036212833334,0.179288462335848,0.165515625,34343,"Hourly lambda",0,Separate recorded runs; differing tuning budgets; not a controlled microbenchmark
+LSBoost24h,34343,50498.9671529583,14.0274908758217,1.47042969900586,0.672709333333333,1431,"Every 24 origins, tree count",77.847931375,Separate recorded runs; differing tuning budgets; not a controlled microbenchmark

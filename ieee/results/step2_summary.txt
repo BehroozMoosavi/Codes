@@ -1,0 +1,67 @@
+VA-REN REVISION: STEP 2 SOURCE-DATA AUDIT
+Audit revision: 1.1 (2026-10-27)
+MATLAB: 25.1.0.2943329 (R2025a)
+Created: 2026-10-27 13:10:38
+
+STEP2_STATUS: AUDIT_COMPLETED
+DATA_CLOCK_STATUS: NOT_YET_VERIFIED
+
+This reports the supplied source labels; it does not certify physical hours.
+NominalClockLabel = reported Date + hours(HE_or_HR - 1), with no time zone.
+Absent/repeated labels can arise from DST or source date conventions.
+Source workbooks were not changed. No rows were repaired, deleted, or filled.
+No forecasting model or accuracy test was run.
+
+PER-FILE COUNTS
+Year | Records | Invalid date/hour/load | Repeat groups | Extra repeats | Absent labels | Non24 days | Order flags | H24 date changes
+2019 | 8760 | 0/0/0 | 1 | 1 | 1 | 2 | 62 | 31
+2020 | 8784 | 0/0/0 | 1 | 1 | 1 | 2 | 2 | 0
+2021 | 8760 | 0/0/0 | 1 | 1 | 1 | 2 | 2 | 0
+2022 | 8760 | 0/0/0 | 1 | 1 | 1 | 2 | 2 | 0
+2023 | 8760 | 0/0/0 | 1 | 1 | 1 | 2 | 2 | 0
+Total source records: 43824
+Blank-core rows retained: 0
+Dates with non-midnight values: 0
+Dates outside workbook year: 0
+
+REPORTED DATES WITH INCOMPLETE OR REPEATED HOUR LABELS
+historicalemshourlyload-2019.xlsx: 2019-01-01; records=23; absent labels=[24]; repeated labels=[]
+historicalemshourlyload-2019.xlsx: 2019-02-01; records=25; absent labels=[]; repeated labels=[24]
+historicalemshourlyload-2020.xlsx: 2020-03-08; records=23; absent labels=[3]; repeated labels=[]
+historicalemshourlyload-2020.xlsx: 2020-11-01; records=25; absent labels=[]; repeated labels=[1]
+historicalemshourlyload-2021.xlsx: 2021-03-14; records=23; absent labels=[2]; repeated labels=[]
+historicalemshourlyload-2021.xlsx: 2021-11-07; records=25; absent labels=[]; repeated labels=[1]
+historicalemshourlyload-2022.xlsx: 2022-03-13; records=23; absent labels=[2]; repeated labels=[]
+historicalemshourlyload-2022.xlsx: 2022-11-06; records=25; absent labels=[]; repeated labels=[1]
+historicalemshourlyloadfor2023.xlsx: 2023-03-12; records=23; absent labels=[2]; repeated labels=[]
+historicalemshourlyloadfor2023.xlsx: 2023-11-05; records=25; absent labels=[]; repeated labels=[1]
+
+ABSENT NOMINAL LABELS (NOT CONFIRMED PHYSICAL GAPS)
+historicalemshourlyload-2019.xlsx: 2019-01-01 hour label 24
+historicalemshourlyload-2020.xlsx: 2020-03-08 hour label 3
+historicalemshourlyload-2021.xlsx: 2021-03-14 hour label 2
+historicalemshourlyload-2022.xlsx: 2022-03-13 hour label 2
+historicalemshourlyloadfor2023.xlsx: 2023-03-12 hour label 2
+
+SOURCE NOTES (COPIED AS READ)
+historicalemshourlyload-2019.xlsx, worksheet row 2, column 8:
+Note: The hourly load value at hour ending (HE) 3:00 AM on 03/10/2019 is the average of both values at HE 2:00 AM and HE 4:00 AM on 03/10/2019, and the hourly load value at hour ending (HE) 2:00 AM on 11/3/2019 is the average of both values at HE 2:00 AM and HE 2’:00 AM (In other words, 2:00AM is repeated) on 11/3/2019 to address DST.
+
+historicalemshourlyload-2019.xlsx, worksheet row 1636, column 8:
+Note: The hourly load value at hour ending (HE) 3:00 AM on 03/10/2019 is the average of both values at HE 2:00 AM and HE 4:00 AM on 03/10/2019 to address DST.
+historicalemshourlyload-2019.xlsx, worksheet row 7347, column 8:
+NOTE: The hourly load value at hour ending (HE) 2:00 AM on 11/3/2019 is the average of both values at HE 2:00 AM and HE 2’:00 AM (In other words, 2:00AM is repeated) on 11/3/2019 to address DST.
+historicalemshourlyload-2020.xlsx, worksheet row 2, column 8:
+Note: The hourly load value at hour ending (HE) 3:00 AM on 03/8/2020 is missing due to the spring DST change. If you wish to correct this for 24 hour load days, take the average of the values at HE 2:00 AM and HE 4:00 AM on 03/8/2020.  Also the hourly load value at hour ending (HE) 1:00 AM on 11/8/2020 duplicated due to the fall DST change.  If you wish to correct this for 24 hour load days, take the average of the duplicate values at HE 1:00 AM on 11/8/2020 and store as a single row. 
+
+historicalemshourlyload-2020.xlsx, worksheet row 1611, column 8:
+Note:  hour 3 is missing due to DST change
+historicalemshourlyload-2020.xlsx, worksheet row 7322, column 8:
+Note: duplicate hour 1 due to DST change
+
+NEXT STEP
+Return step2_data_audit.zip for review before constructing forecasting inputs.
+If ZIP creation is unavailable, return this text file and source_file_summary.csv.
+all_source_records.csv preserves imported source-row order and flags.
+clock_review_rows.csv includes affected rows and DST-date context.
+A completed audit is not approval to interpolate or relabel observations.

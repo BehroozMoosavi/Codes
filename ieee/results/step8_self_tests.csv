@@ -1,0 +1,38 @@
+Check,Pass,MaxAbsDifference
+"No RNG changes",1,0
+"No fitting or random-number use",1,0
+"Expected row geometry",1,0
+"All regular fixture tests defined",1,0
+"Planned Holm families preserved",1,0
+"DM text columns are string columns",1,0
+"Effect text columns are string columns",1,0
+"GW text columns are string columns",1,0
+"Independent numerical fixture lag168",1,6.00412081164237e-13
+"Independent numerical fixture lag24",1,4.26103596851135e-13
+"Independent numerical fixture lag48",1,5.57234813847174e-13
+"Independent numerical fixture lag720",1,4.69414090931153e-12
+"Benefit and harm signs",1,7.105427357601e-14
+"Pair reversal DM sign",1,0
+"Pair reversal p invariant",1,0
+"Pair reversal RMSE gain",1,0
+"Unit scale p invariant",1,0
+"Unit scale RMSE CI",1,0
+"Unit scale percent CI invariant",1,0
+"GW nonsingular instrument transformation",1,6.76664058119059e-10
+"Constant-only GW equals squared DM",1,1.48429535329342e-09
+"Constant-only GW p equals two-sided DM p",1,5.55111512312578e-15
+"Duplicate losses not assigned p=1",1,0
+"Empty GW keeps string column types",1,0
+"Single-row effects keep string column types",1,0
+"Constant nonzero differential undefined",1,0
+"Zero MSE blocks nonsmooth delta intervals",1,0
+"Singular GW is reported, not inverted",1,0
+"Known-p fixture",1,8.02795330212547e-14
+"Holm ordered cumulative adjustment",1,1.60559066042509e-13
+"Undefined comparison retains planned family",1,0
+"Undefined comparison conservatively counts",1,2.40842068510716e-13
+"Duplicate column labels rejected",1,0
+"Excess HAC lag rejected",1,0
+"Missing constant instrument rejected",1,0
+"Nonfinite prediction rejected",1,0
+"Caller RNG preserved through all checks",1,0

@@ -1,0 +1,571 @@
+
+VA-REN REVISION: STEP 5 FULL EVALUATION
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+Existing run resumed: 0
+Run folder: /Users/behroozmoosavi/Desktop/ieee/step5_full_tp75e60f97_acf6_49a9_9ef7_c9ad174bd93c
+Input source: /Users/behroozmoosavi/Desktop/ieee/step3_oasis_tp140b65d4_1b47_40d2_8155_bcc71af705d8/caiso_oasis_inputs_2019_2023.mat
+Step 4 reference: /Users/behroozmoosavi/Desktop/ieee/step4_pilot_tpf11b7494_4ef4_4276_8637_18c2d3235d48/varen_corrected_results.mat
+
+Checking resume using the same 24 Step 4 forecast origins.
+Corrected VA-REN: 1/24 origins; UTC 31-Jan-2020 09:00:00
+Checkpoint committed: 12/24 complete origins.
+Paused after 12 origins; call again with a larger StopAfter to resume.
+Checkpoint resume: 12/24 complete origins.
+Corrected VA-REN: 24/24 origins; UTC 01-Feb-2020 08:00:00
+Checkpoint committed: 24/24 complete origins.
+[Warning: Some models select a lambda-grid endpoint in more than 5% of origins.
+Disclose it; change any grid using training/calibration evidence only.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('varen_checkpointed_core', '/Users/behroozmoosavi/Desktop/ieee/varen_checkpointed_core.m', 430)" style="font-weight:bold">varen_checkpointed_core</a> (<a href="matlab: opentoline('/Users/behroozmoosavi/Desktop/ieee/varen_checkpointed_core.m',430,0)">line 430</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_varen_step5_full', '/Users/behroozmoosavi/Desktop/ieee/run_varen_step5_full.m', 116)" style="font-weight:bold">run_varen_step5_full</a> (<a href="matlab: opentoline('/Users/behroozmoosavi/Desktop/ieee/run_varen_step5_full.m',116,0)">line 116</a>)] 
+CHECKPOINT_EQUIVALENCE: PASS (12 paused, 24 completed, Step 4 reproduced).
+
+Starting/continuing all 34343 forecast origins with the fixed settings.
+Progress is printed by the core; checkpoints save every 250 complete origins.
+The pilot suggested about 5.3 hours of serial fitting; actual time may differ.
+To resume, run run_varen_step5_full with the run folder printed above.
+
+Corrected VA-REN: 1/34343 origins; UTC 31-Jan-2020 09:00:00
+Corrected VA-REN: 100/34343 origins; UTC 04-Feb-2020 12:00:00
+Corrected VA-REN: 200/34343 origins; UTC 08-Feb-2020 16:00:00
+Checkpoint committed: 250/34343 complete origins.
+Corrected VA-REN: 300/34343 origins; UTC 12-Feb-2020 20:00:00
+Corrected VA-REN: 400/34343 origins; UTC 17-Feb-2020
+Corrected VA-REN: 500/34343 origins; UTC 21-Feb-2020 04:00:00
+Checkpoint committed: 500/34343 complete origins.
+Corrected VA-REN: 600/34343 origins; UTC 25-Feb-2020 08:00:00
+Corrected VA-REN: 700/34343 origins; UTC 29-Feb-2020 12:00:00
+Checkpoint committed: 750/34343 complete origins.
+Corrected VA-REN: 800/34343 origins; UTC 04-Mar-2020 16:00:00
+Corrected VA-REN: 900/34343 origins; UTC 08-Mar-2020 20:00:00
+Corrected VA-REN: 1000/34343 origins; UTC 13-Mar-2020
+Checkpoint committed: 1000/34343 complete origins.
+Corrected VA-REN: 1100/34343 origins; UTC 17-Mar-2020 04:00:00
+Corrected VA-REN: 1200/34343 origins; UTC 21-Mar-2020 08:00:00
+Checkpoint committed: 1250/34343 complete origins.
+Corrected VA-REN: 1300/34343 origins; UTC 25-Mar-2020 12:00:00
+Corrected VA-REN: 1400/34343 origins; UTC 29-Mar-2020 16:00:00
+Corrected VA-REN: 1500/34343 origins; UTC 02-Apr-2020 20:00:00
+Checkpoint committed: 1500/34343 complete origins.
+Corrected VA-REN: 1600/34343 origins; UTC 07-Apr-2020
+Corrected VA-REN: 1700/34343 origins; UTC 11-Apr-2020 04:00:00
+Checkpoint committed: 1750/34343 complete origins.
+Corrected VA-REN: 1800/34343 origins; UTC 15-Apr-2020 08:00:00
+Corrected VA-REN: 1900/34343 origins; UTC 19-Apr-2020 12:00:00
+Corrected VA-REN: 2000/34343 origins; UTC 23-Apr-2020 16:00:00
+Checkpoint committed: 2000/34343 complete origins.
+Corrected VA-REN: 2100/34343 origins; UTC 27-Apr-2020 20:00:00
+Corrected VA-REN: 2200/34343 origins; UTC 02-May-2020
+Checkpoint committed: 2250/34343 complete origins.
+Corrected VA-REN: 2300/34343 origins; UTC 06-May-2020 04:00:00
+Corrected VA-REN: 2400/34343 origins; UTC 10-May-2020 08:00:00
+Corrected VA-REN: 2500/34343 origins; UTC 14-May-2020 12:00:00
+Checkpoint committed: 2500/34343 complete origins.
+Corrected VA-REN: 2600/34343 origins; UTC 18-May-2020 16:00:00
+Corrected VA-REN: 2700/34343 origins; UTC 22-May-2020 20:00:00
+Checkpoint committed: 2750/34343 complete origins.
+Corrected VA-REN: 2800/34343 origins; UTC 27-May-2020
+Corrected VA-REN: 2900/34343 origins; UTC 31-May-2020 04:00:00
+Corrected VA-REN: 3000/34343 origins; UTC 04-Jun-2020 08:00:00
+Checkpoint committed: 3000/34343 complete origins.
+Corrected VA-REN: 3100/34343 origins; UTC 08-Jun-2020 12:00:00
+Corrected VA-REN: 3200/34343 origins; UTC 12-Jun-2020 16:00:00
+Checkpoint committed: 3250/34343 complete origins.
+Corrected VA-REN: 3300/34343 origins; UTC 16-Jun-2020 20:00:00
+Corrected VA-REN: 3400/34343 origins; UTC 21-Jun-2020
+Corrected VA-REN: 3500/34343 origins; UTC 25-Jun-2020 04:00:00
+Checkpoint committed: 3500/34343 complete origins.
+Corrected VA-REN: 3600/34343 origins; UTC 29-Jun-2020 08:00:00
+Corrected VA-REN: 3700/34343 origins; UTC 03-Jul-2020 12:00:00
+Checkpoint committed: 3750/34343 complete origins.
+Corrected VA-REN: 3800/34343 origins; UTC 07-Jul-2020 16:00:00
+Corrected VA-REN: 3900/34343 origins; UTC 11-Jul-2020 20:00:00
+Corrected VA-REN: 4000/34343 origins; UTC 16-Jul-2020
+Checkpoint committed: 4000/34343 complete origins.
+Corrected VA-REN: 4100/34343 origins; UTC 20-Jul-2020 04:00:00
+Corrected VA-REN: 4200/34343 origins; UTC 24-Jul-2020 08:00:00
+Checkpoint committed: 4250/34343 complete origins.
+Corrected VA-REN: 4300/34343 origins; UTC 28-Jul-2020 12:00:00
+Corrected VA-REN: 4400/34343 origins; UTC 01-Aug-2020 16:00:00
+Corrected VA-REN: 4500/34343 origins; UTC 05-Aug-2020 20:00:00
+Checkpoint committed: 4500/34343 complete origins.
+Corrected VA-REN: 4600/34343 origins; UTC 10-Aug-2020
+Corrected VA-REN: 4700/34343 origins; UTC 14-Aug-2020 04:00:00
+Checkpoint committed: 4750/34343 complete origins.
+Corrected VA-REN: 4800/34343 origins; UTC 18-Aug-2020 08:00:00
+Corrected VA-REN: 4900/34343 origins; UTC 22-Aug-2020 12:00:00
+Corrected VA-REN: 5000/34343 origins; UTC 26-Aug-2020 16:00:00
+Checkpoint committed: 5000/34343 complete origins.
+Corrected VA-REN: 5100/34343 origins; UTC 30-Aug-2020 20:00:00
+Corrected VA-REN: 5200/34343 origins; UTC 04-Sep-2020
+Checkpoint committed: 5250/34343 complete origins.
+Corrected VA-REN: 5300/34343 origins; UTC 08-Sep-2020 04:00:00
+Corrected VA-REN: 5400/34343 origins; UTC 12-Sep-2020 08:00:00
+Corrected VA-REN: 5500/34343 origins; UTC 16-Sep-2020 12:00:00
+Checkpoint committed: 5500/34343 complete origins.
+Corrected VA-REN: 5600/34343 origins; UTC 20-Sep-2020 16:00:00
+Corrected VA-REN: 5700/34343 origins; UTC 24-Sep-2020 20:00:00
+Checkpoint committed: 5750/34343 complete origins.
+Corrected VA-REN: 5800/34343 origins; UTC 29-Sep-2020
+Corrected VA-REN: 5900/34343 origins; UTC 03-Oct-2020 04:00:00
+Corrected VA-REN: 6000/34343 origins; UTC 07-Oct-2020 08:00:00
+Checkpoint committed: 6000/34343 complete origins.
+Corrected VA-REN: 6100/34343 origins; UTC 11-Oct-2020 12:00:00
+Corrected VA-REN: 6200/34343 origins; UTC 15-Oct-2020 16:00:00
+Checkpoint committed: 6250/34343 complete origins.
+Corrected VA-REN: 6300/34343 origins; UTC 19-Oct-2020 20:00:00
+Corrected VA-REN: 6400/34343 origins; UTC 24-Oct-2020
+Corrected VA-REN: 6500/34343 origins; UTC 28-Oct-2020 04:00:00
+Checkpoint committed: 6500/34343 complete origins.
+Corrected VA-REN: 6600/34343 origins; UTC 01-Nov-2020 08:00:00
+Corrected VA-REN: 6700/34343 origins; UTC 05-Nov-2020 12:00:00
+Checkpoint committed: 6750/34343 complete origins.
+Corrected VA-REN: 6800/34343 origins; UTC 09-Nov-2020 16:00:00
+Corrected VA-REN: 6900/34343 origins; UTC 13-Nov-2020 20:00:00
+Corrected VA-REN: 7000/34343 origins; UTC 18-Nov-2020
+Checkpoint committed: 7000/34343 complete origins.
+Corrected VA-REN: 7100/34343 origins; UTC 22-Nov-2020 04:00:00
+Corrected VA-REN: 7200/34343 origins; UTC 26-Nov-2020 08:00:00
+Checkpoint committed: 7250/34343 complete origins.
+Corrected VA-REN: 7300/34343 origins; UTC 30-Nov-2020 12:00:00
+Corrected VA-REN: 7400/34343 origins; UTC 04-Dec-2020 16:00:00
+Corrected VA-REN: 7500/34343 origins; UTC 08-Dec-2020 20:00:00
+Checkpoint committed: 7500/34343 complete origins.
+Corrected VA-REN: 7600/34343 origins; UTC 13-Dec-2020
+Corrected VA-REN: 7700/34343 origins; UTC 17-Dec-2020 04:00:00
+Checkpoint committed: 7750/34343 complete origins.
+Corrected VA-REN: 7800/34343 origins; UTC 21-Dec-2020 08:00:00
+Corrected VA-REN: 7900/34343 origins; UTC 25-Dec-2020 12:00:00
+Corrected VA-REN: 8000/34343 origins; UTC 29-Dec-2020 16:00:00
+Checkpoint committed: 8000/34343 complete origins.
+Corrected VA-REN: 8100/34343 origins; UTC 02-Jan-2021 20:00:00
+Corrected VA-REN: 8200/34343 origins; UTC 07-Jan-2021
+Checkpoint committed: 8250/34343 complete origins.
+Corrected VA-REN: 8300/34343 origins; UTC 11-Jan-2021 04:00:00
+Corrected VA-REN: 8400/34343 origins; UTC 15-Jan-2021 08:00:00
+Corrected VA-REN: 8500/34343 origins; UTC 19-Jan-2021 12:00:00
+Checkpoint committed: 8500/34343 complete origins.
+Corrected VA-REN: 8600/34343 origins; UTC 23-Jan-2021 16:00:00
+Corrected VA-REN: 8700/34343 origins; UTC 27-Jan-2021 20:00:00
+Checkpoint committed: 8750/34343 complete origins.
+Corrected VA-REN: 8800/34343 origins; UTC 01-Feb-2021
+Corrected VA-REN: 8900/34343 origins; UTC 05-Feb-2021 04:00:00
+Corrected VA-REN: 9000/34343 origins; UTC 09-Feb-2021 08:00:00
+Checkpoint committed: 9000/34343 complete origins.
+Corrected VA-REN: 9100/34343 origins; UTC 13-Feb-2021 12:00:00
+Corrected VA-REN: 9200/34343 origins; UTC 17-Feb-2021 16:00:00
+Checkpoint committed: 9250/34343 complete origins.
+Corrected VA-REN: 9300/34343 origins; UTC 21-Feb-2021 20:00:00
+Corrected VA-REN: 9400/34343 origins; UTC 26-Feb-2021
+Corrected VA-REN: 9500/34343 origins; UTC 02-Mar-2021 04:00:00
+Checkpoint committed: 9500/34343 complete origins.
+Corrected VA-REN: 9600/34343 origins; UTC 06-Mar-2021 08:00:00
+Corrected VA-REN: 9700/34343 origins; UTC 10-Mar-2021 12:00:00
+Checkpoint committed: 9750/34343 complete origins.
+Corrected VA-REN: 9800/34343 origins; UTC 14-Mar-2021 16:00:00
+Corrected VA-REN: 9900/34343 origins; UTC 18-Mar-2021 20:00:00
+Corrected VA-REN: 10000/34343 origins; UTC 23-Mar-2021
+Checkpoint committed: 10000/34343 complete origins.
+Corrected VA-REN: 10100/34343 origins; UTC 27-Mar-2021 04:00:00
+Corrected VA-REN: 10200/34343 origins; UTC 31-Mar-2021 08:00:00
+Checkpoint committed: 10250/34343 complete origins.
+Corrected VA-REN: 10300/34343 origins; UTC 04-Apr-2021 12:00:00
+Corrected VA-REN: 10400/34343 origins; UTC 08-Apr-2021 16:00:00
+Corrected VA-REN: 10500/34343 origins; UTC 12-Apr-2021 20:00:00
+Checkpoint committed: 10500/34343 complete origins.
+Corrected VA-REN: 10600/34343 origins; UTC 17-Apr-2021
+Corrected VA-REN: 10700/34343 origins; UTC 21-Apr-2021 04:00:00
+Checkpoint committed: 10750/34343 complete origins.
+Corrected VA-REN: 10800/34343 origins; UTC 25-Apr-2021 08:00:00
+Corrected VA-REN: 10900/34343 origins; UTC 29-Apr-2021 12:00:00
+Corrected VA-REN: 11000/34343 origins; UTC 03-May-2021 16:00:00
+Checkpoint committed: 11000/34343 complete origins.
+Corrected VA-REN: 11100/34343 origins; UTC 07-May-2021 20:00:00
+Corrected VA-REN: 11200/34343 origins; UTC 12-May-2021
+Checkpoint committed: 11250/34343 complete origins.
+Corrected VA-REN: 11300/34343 origins; UTC 16-May-2021 04:00:00
+Corrected VA-REN: 11400/34343 origins; UTC 20-May-2021 08:00:00
+Corrected VA-REN: 11500/34343 origins; UTC 24-May-2021 12:00:00
+Checkpoint committed: 11500/34343 complete origins.
+Corrected VA-REN: 11600/34343 origins; UTC 28-May-2021 16:00:00
+Corrected VA-REN: 11700/34343 origins; UTC 01-Jun-2021 20:00:00
+Checkpoint committed: 11750/34343 complete origins.
+Corrected VA-REN: 11800/34343 origins; UTC 06-Jun-2021
+Corrected VA-REN: 11900/34343 origins; UTC 10-Jun-2021 04:00:00
+Corrected VA-REN: 12000/34343 origins; UTC 14-Jun-2021 08:00:00
+Checkpoint committed: 12000/34343 complete origins.
+Corrected VA-REN: 12100/34343 origins; UTC 18-Jun-2021 12:00:00
+Corrected VA-REN: 12200/34343 origins; UTC 22-Jun-2021 16:00:00
+Checkpoint committed: 12250/34343 complete origins.
+Corrected VA-REN: 12300/34343 origins; UTC 26-Jun-2021 20:00:00
+Corrected VA-REN: 12400/34343 origins; UTC 01-Jul-2021
+Corrected VA-REN: 12500/34343 origins; UTC 05-Jul-2021 04:00:00
+Checkpoint committed: 12500/34343 complete origins.
+Corrected VA-REN: 12600/34343 origins; UTC 09-Jul-2021 08:00:00
+Corrected VA-REN: 12700/34343 origins; UTC 13-Jul-2021 12:00:00
+Checkpoint committed: 12750/34343 complete origins.
+Corrected VA-REN: 12800/34343 origins; UTC 17-Jul-2021 16:00:00
+Corrected VA-REN: 12900/34343 origins; UTC 21-Jul-2021 20:00:00
+Corrected VA-REN: 13000/34343 origins; UTC 26-Jul-2021
+Checkpoint committed: 13000/34343 complete origins.
+Corrected VA-REN: 13100/34343 origins; UTC 30-Jul-2021 04:00:00
+Corrected VA-REN: 13200/34343 origins; UTC 03-Aug-2021 08:00:00
+Checkpoint committed: 13250/34343 complete origins.
+Corrected VA-REN: 13300/34343 origins; UTC 07-Aug-2021 12:00:00
+Corrected VA-REN: 13400/34343 origins; UTC 11-Aug-2021 16:00:00
+Corrected VA-REN: 13500/34343 origins; UTC 15-Aug-2021 20:00:00
+Checkpoint committed: 13500/34343 complete origins.
+Corrected VA-REN: 13600/34343 origins; UTC 20-Aug-2021
+Corrected VA-REN: 13700/34343 origins; UTC 24-Aug-2021 04:00:00
+Checkpoint committed: 13750/34343 complete origins.
+Corrected VA-REN: 13800/34343 origins; UTC 28-Aug-2021 08:00:00
+Corrected VA-REN: 13900/34343 origins; UTC 01-Sep-2021 12:00:00
+Corrected VA-REN: 14000/34343 origins; UTC 05-Sep-2021 16:00:00
+Checkpoint committed: 14000/34343 complete origins.
+Corrected VA-REN: 14100/34343 origins; UTC 09-Sep-2021 20:00:00
+Corrected VA-REN: 14200/34343 origins; UTC 14-Sep-2021
+Checkpoint committed: 14250/34343 complete origins.
+Corrected VA-REN: 14300/34343 origins; UTC 18-Sep-2021 04:00:00
+Corrected VA-REN: 14400/34343 origins; UTC 22-Sep-2021 08:00:00
+Corrected VA-REN: 14500/34343 origins; UTC 26-Sep-2021 12:00:00
+Checkpoint committed: 14500/34343 complete origins.
+Corrected VA-REN: 14600/34343 origins; UTC 30-Sep-2021 16:00:00
+Corrected VA-REN: 14700/34343 origins; UTC 04-Oct-2021 20:00:00
+Checkpoint committed: 14750/34343 complete origins.
+Corrected VA-REN: 14800/34343 origins; UTC 09-Oct-2021
+Corrected VA-REN: 14900/34343 origins; UTC 13-Oct-2021 04:00:00
+Corrected VA-REN: 15000/34343 origins; UTC 17-Oct-2021 08:00:00
+Checkpoint committed: 15000/34343 complete origins.
+Corrected VA-REN: 15100/34343 origins; UTC 21-Oct-2021 12:00:00
+Corrected VA-REN: 15200/34343 origins; UTC 25-Oct-2021 16:00:00
+Checkpoint committed: 15250/34343 complete origins.
+Corrected VA-REN: 15300/34343 origins; UTC 29-Oct-2021 20:00:00
+Corrected VA-REN: 15400/34343 origins; UTC 03-Nov-2021
+Corrected VA-REN: 15500/34343 origins; UTC 07-Nov-2021 04:00:00
+Checkpoint committed: 15500/34343 complete origins.
+Corrected VA-REN: 15600/34343 origins; UTC 11-Nov-2021 08:00:00
+Corrected VA-REN: 15700/34343 origins; UTC 15-Nov-2021 12:00:00
+Checkpoint committed: 15750/34343 complete origins.
+Corrected VA-REN: 15800/34343 origins; UTC 19-Nov-2021 16:00:00
+Corrected VA-REN: 15900/34343 origins; UTC 23-Nov-2021 20:00:00
+Corrected VA-REN: 16000/34343 origins; UTC 28-Nov-2021
+Checkpoint committed: 16000/34343 complete origins.
+Corrected VA-REN: 16100/34343 origins; UTC 02-Dec-2021 04:00:00
+Corrected VA-REN: 16200/34343 origins; UTC 06-Dec-2021 08:00:00
+Checkpoint committed: 16250/34343 complete origins.
+Corrected VA-REN: 16300/34343 origins; UTC 10-Dec-2021 12:00:00
+Corrected VA-REN: 16400/34343 origins; UTC 14-Dec-2021 16:00:00
+Corrected VA-REN: 16500/34343 origins; UTC 18-Dec-2021 20:00:00
+Checkpoint committed: 16500/34343 complete origins.
+Corrected VA-REN: 16600/34343 origins; UTC 23-Dec-2021
+Corrected VA-REN: 16700/34343 origins; UTC 27-Dec-2021 04:00:00
+Checkpoint committed: 16750/34343 complete origins.
+Corrected VA-REN: 16800/34343 origins; UTC 31-Dec-2021 08:00:00
+Corrected VA-REN: 16900/34343 origins; UTC 04-Jan-2022 12:00:00
+Corrected VA-REN: 17000/34343 origins; UTC 08-Jan-2022 16:00:00
+Checkpoint committed: 17000/34343 complete origins.
+Corrected VA-REN: 17100/34343 origins; UTC 12-Jan-2022 20:00:00
+Corrected VA-REN: 17200/34343 origins; UTC 17-Jan-2022
+Checkpoint committed: 17250/34343 complete origins.
+Corrected VA-REN: 17300/34343 origins; UTC 21-Jan-2022 04:00:00
+Corrected VA-REN: 17400/34343 origins; UTC 25-Jan-2022 08:00:00
+Corrected VA-REN: 17500/34343 origins; UTC 29-Jan-2022 12:00:00
+Checkpoint committed: 17500/34343 complete origins.
+Corrected VA-REN: 17600/34343 origins; UTC 02-Feb-2022 16:00:00
+Corrected VA-REN: 17700/34343 origins; UTC 06-Feb-2022 20:00:00
+Checkpoint committed: 17750/34343 complete origins.
+Corrected VA-REN: 17800/34343 origins; UTC 11-Feb-2022
+Corrected VA-REN: 17900/34343 origins; UTC 15-Feb-2022 04:00:00
+Corrected VA-REN: 18000/34343 origins; UTC 19-Feb-2022 08:00:00
+Checkpoint committed: 18000/34343 complete origins.
+Corrected VA-REN: 18100/34343 origins; UTC 23-Feb-2022 12:00:00
+Corrected VA-REN: 18200/34343 origins; UTC 27-Feb-2022 16:00:00
+Checkpoint committed: 18250/34343 complete origins.
+Corrected VA-REN: 18300/34343 origins; UTC 03-Mar-2022 20:00:00
+Corrected VA-REN: 18400/34343 origins; UTC 08-Mar-2022
+Corrected VA-REN: 18500/34343 origins; UTC 12-Mar-2022 04:00:00
+Checkpoint committed: 18500/34343 complete origins.
+Corrected VA-REN: 18600/34343 origins; UTC 16-Mar-2022 08:00:00
+Corrected VA-REN: 18700/34343 origins; UTC 20-Mar-2022 12:00:00
+Checkpoint committed: 18750/34343 complete origins.
+Corrected VA-REN: 18800/34343 origins; UTC 24-Mar-2022 16:00:00
+Corrected VA-REN: 18900/34343 origins; UTC 28-Mar-2022 20:00:00
+Corrected VA-REN: 19000/34343 origins; UTC 02-Apr-2022
+Checkpoint committed: 19000/34343 complete origins.
+Corrected VA-REN: 19100/34343 origins; UTC 06-Apr-2022 04:00:00
+Corrected VA-REN: 19200/34343 origins; UTC 10-Apr-2022 08:00:00
+Checkpoint committed: 19250/34343 complete origins.
+Corrected VA-REN: 19300/34343 origins; UTC 14-Apr-2022 12:00:00
+Corrected VA-REN: 19400/34343 origins; UTC 18-Apr-2022 16:00:00
+Corrected VA-REN: 19500/34343 origins; UTC 22-Apr-2022 20:00:00
+Checkpoint committed: 19500/34343 complete origins.
+Corrected VA-REN: 19600/34343 origins; UTC 27-Apr-2022
+Corrected VA-REN: 19700/34343 origins; UTC 01-May-2022 04:00:00
+Checkpoint committed: 19750/34343 complete origins.
+Corrected VA-REN: 19800/34343 origins; UTC 05-May-2022 08:00:00
+Corrected VA-REN: 19900/34343 origins; UTC 09-May-2022 12:00:00
+Corrected VA-REN: 20000/34343 origins; UTC 13-May-2022 16:00:00
+Checkpoint committed: 20000/34343 complete origins.
+Corrected VA-REN: 20100/34343 origins; UTC 17-May-2022 20:00:00
+Corrected VA-REN: 20200/34343 origins; UTC 22-May-2022
+Checkpoint committed: 20250/34343 complete origins.
+Corrected VA-REN: 20300/34343 origins; UTC 26-May-2022 04:00:00
+Corrected VA-REN: 20400/34343 origins; UTC 30-May-2022 08:00:00
+Corrected VA-REN: 20500/34343 origins; UTC 03-Jun-2022 12:00:00
+Checkpoint committed: 20500/34343 complete origins.
+Corrected VA-REN: 20600/34343 origins; UTC 07-Jun-2022 16:00:00
+Corrected VA-REN: 20700/34343 origins; UTC 11-Jun-2022 20:00:00
+Checkpoint committed: 20750/34343 complete origins.
+Corrected VA-REN: 20800/34343 origins; UTC 16-Jun-2022
+Corrected VA-REN: 20900/34343 origins; UTC 20-Jun-2022 04:00:00
+Corrected VA-REN: 21000/34343 origins; UTC 24-Jun-2022 08:00:00
+Checkpoint committed: 21000/34343 complete origins.
+Corrected VA-REN: 21100/34343 origins; UTC 28-Jun-2022 12:00:00
+Corrected VA-REN: 21200/34343 origins; UTC 02-Jul-2022 16:00:00
+Checkpoint committed: 21250/34343 complete origins.
+Corrected VA-REN: 21300/34343 origins; UTC 06-Jul-2022 20:00:00
+Corrected VA-REN: 21400/34343 origins; UTC 11-Jul-2022
+Corrected VA-REN: 21500/34343 origins; UTC 15-Jul-2022 04:00:00
+Checkpoint committed: 21500/34343 complete origins.
+Corrected VA-REN: 21600/34343 origins; UTC 19-Jul-2022 08:00:00
+Corrected VA-REN: 21700/34343 origins; UTC 23-Jul-2022 12:00:00
+Checkpoint committed: 21750/34343 complete origins.
+Corrected VA-REN: 21800/34343 origins; UTC 27-Jul-2022 16:00:00
+Corrected VA-REN: 21900/34343 origins; UTC 31-Jul-2022 20:00:00
+Corrected VA-REN: 22000/34343 origins; UTC 05-Aug-2022
+Checkpoint committed: 22000/34343 complete origins.
+Corrected VA-REN: 22100/34343 origins; UTC 09-Aug-2022 04:00:00
+Corrected VA-REN: 22200/34343 origins; UTC 13-Aug-2022 08:00:00
+Checkpoint committed: 22250/34343 complete origins.
+Corrected VA-REN: 22300/34343 origins; UTC 17-Aug-2022 12:00:00
+Corrected VA-REN: 22400/34343 origins; UTC 21-Aug-2022 16:00:00
+Corrected VA-REN: 22500/34343 origins; UTC 25-Aug-2022 20:00:00
+Checkpoint committed: 22500/34343 complete origins.
+Corrected VA-REN: 22600/34343 origins; UTC 30-Aug-2022
+Corrected VA-REN: 22700/34343 origins; UTC 03-Sep-2022 04:00:00
+Checkpoint committed: 22750/34343 complete origins.
+Corrected VA-REN: 22800/34343 origins; UTC 07-Sep-2022 08:00:00
+Corrected VA-REN: 22900/34343 origins; UTC 11-Sep-2022 12:00:00
+Corrected VA-REN: 23000/34343 origins; UTC 15-Sep-2022 16:00:00
+Checkpoint committed: 23000/34343 complete origins.
+Corrected VA-REN: 23100/34343 origins; UTC 19-Sep-2022 20:00:00
+Corrected VA-REN: 23200/34343 origins; UTC 24-Sep-2022
+Checkpoint committed: 23250/34343 complete origins.
+Corrected VA-REN: 23300/34343 origins; UTC 28-Sep-2022 04:00:00
+Corrected VA-REN: 23400/34343 origins; UTC 02-Oct-2022 08:00:00
+Corrected VA-REN: 23500/34343 origins; UTC 06-Oct-2022 12:00:00
+Checkpoint committed: 23500/34343 complete origins.
+Corrected VA-REN: 23600/34343 origins; UTC 10-Oct-2022 16:00:00
+Corrected VA-REN: 23700/34343 origins; UTC 14-Oct-2022 20:00:00
+Checkpoint committed: 23750/34343 complete origins.
+Corrected VA-REN: 23800/34343 origins; UTC 19-Oct-2022
+Corrected VA-REN: 23900/34343 origins; UTC 23-Oct-2022 04:00:00
+Corrected VA-REN: 24000/34343 origins; UTC 27-Oct-2022 08:00:00
+Checkpoint committed: 24000/34343 complete origins.
+Corrected VA-REN: 24100/34343 origins; UTC 31-Oct-2022 12:00:00
+Corrected VA-REN: 24200/34343 origins; UTC 04-Nov-2022 16:00:00
+Checkpoint committed: 24250/34343 complete origins.
+Corrected VA-REN: 24300/34343 origins; UTC 08-Nov-2022 20:00:00
+Corrected VA-REN: 24400/34343 origins; UTC 13-Nov-2022
+Corrected VA-REN: 24500/34343 origins; UTC 17-Nov-2022 04:00:00
+Checkpoint committed: 24500/34343 complete origins.
+Corrected VA-REN: 24600/34343 origins; UTC 21-Nov-2022 08:00:00
+Corrected VA-REN: 24700/34343 origins; UTC 25-Nov-2022 12:00:00
+Checkpoint committed: 24750/34343 complete origins.
+Corrected VA-REN: 24800/34343 origins; UTC 29-Nov-2022 16:00:00
+Corrected VA-REN: 24900/34343 origins; UTC 03-Dec-2022 20:00:00
+Corrected VA-REN: 25000/34343 origins; UTC 08-Dec-2022
+Checkpoint committed: 25000/34343 complete origins.
+Corrected VA-REN: 25100/34343 origins; UTC 12-Dec-2022 04:00:00
+Corrected VA-REN: 25200/34343 origins; UTC 16-Dec-2022 08:00:00
+Checkpoint committed: 25250/34343 complete origins.
+Corrected VA-REN: 25300/34343 origins; UTC 20-Dec-2022 12:00:00
+Corrected VA-REN: 25400/34343 origins; UTC 24-Dec-2022 16:00:00
+Corrected VA-REN: 25500/34343 origins; UTC 28-Dec-2022 20:00:00
+Checkpoint committed: 25500/34343 complete origins.
+Corrected VA-REN: 25600/34343 origins; UTC 02-Jan-2023
+Corrected VA-REN: 25700/34343 origins; UTC 06-Jan-2023 04:00:00
+Checkpoint committed: 25750/34343 complete origins.
+Corrected VA-REN: 25800/34343 origins; UTC 10-Jan-2023 08:00:00
+Corrected VA-REN: 25900/34343 origins; UTC 14-Jan-2023 12:00:00
+Corrected VA-REN: 26000/34343 origins; UTC 18-Jan-2023 16:00:00
+Checkpoint committed: 26000/34343 complete origins.
+Corrected VA-REN: 26100/34343 origins; UTC 22-Jan-2023 20:00:00
+Corrected VA-REN: 26200/34343 origins; UTC 27-Jan-2023
+Checkpoint committed: 26250/34343 complete origins.
+Corrected VA-REN: 26300/34343 origins; UTC 31-Jan-2023 04:00:00
+Corrected VA-REN: 26400/34343 origins; UTC 04-Feb-2023 08:00:00
+Corrected VA-REN: 26500/34343 origins; UTC 08-Feb-2023 12:00:00
+Checkpoint committed: 26500/34343 complete origins.
+Corrected VA-REN: 26600/34343 origins; UTC 12-Feb-2023 16:00:00
+Corrected VA-REN: 26700/34343 origins; UTC 16-Feb-2023 20:00:00
+Checkpoint committed: 26750/34343 complete origins.
+Corrected VA-REN: 26800/34343 origins; UTC 21-Feb-2023
+Corrected VA-REN: 26900/34343 origins; UTC 25-Feb-2023 04:00:00
+Corrected VA-REN: 27000/34343 origins; UTC 01-Mar-2023 08:00:00
+Checkpoint committed: 27000/34343 complete origins.
+Corrected VA-REN: 27100/34343 origins; UTC 05-Mar-2023 12:00:00
+Corrected VA-REN: 27200/34343 origins; UTC 09-Mar-2023 16:00:00
+Checkpoint committed: 27250/34343 complete origins.
+Corrected VA-REN: 27300/34343 origins; UTC 13-Mar-2023 20:00:00
+Corrected VA-REN: 27400/34343 origins; UTC 18-Mar-2023
+Corrected VA-REN: 27500/34343 origins; UTC 22-Mar-2023 04:00:00
+Checkpoint committed: 27500/34343 complete origins.
+Corrected VA-REN: 27600/34343 origins; UTC 26-Mar-2023 08:00:00
+Corrected VA-REN: 27700/34343 origins; UTC 30-Mar-2023 12:00:00
+Checkpoint committed: 27750/34343 complete origins.
+Corrected VA-REN: 27800/34343 origins; UTC 03-Apr-2023 16:00:00
+Corrected VA-REN: 27900/34343 origins; UTC 07-Apr-2023 20:00:00
+Corrected VA-REN: 28000/34343 origins; UTC 12-Apr-2023
+Checkpoint committed: 28000/34343 complete origins.
+Corrected VA-REN: 28100/34343 origins; UTC 16-Apr-2023 04:00:00
+Corrected VA-REN: 28200/34343 origins; UTC 20-Apr-2023 08:00:00
+Checkpoint committed: 28250/34343 complete origins.
+Corrected VA-REN: 28300/34343 origins; UTC 24-Apr-2023 12:00:00
+Corrected VA-REN: 28400/34343 origins; UTC 28-Apr-2023 16:00:00
+Corrected VA-REN: 28500/34343 origins; UTC 02-May-2023 20:00:00
+Checkpoint committed: 28500/34343 complete origins.
+Corrected VA-REN: 28600/34343 origins; UTC 07-May-2023
+Corrected VA-REN: 28700/34343 origins; UTC 11-May-2023 04:00:00
+Checkpoint committed: 28750/34343 complete origins.
+Corrected VA-REN: 28800/34343 origins; UTC 15-May-2023 08:00:00
+Corrected VA-REN: 28900/34343 origins; UTC 19-May-2023 12:00:00
+Corrected VA-REN: 29000/34343 origins; UTC 23-May-2023 16:00:00
+Checkpoint committed: 29000/34343 complete origins.
+Corrected VA-REN: 29100/34343 origins; UTC 27-May-2023 20:00:00
+Corrected VA-REN: 29200/34343 origins; UTC 01-Jun-2023
+Checkpoint committed: 29250/34343 complete origins.
+Corrected VA-REN: 29300/34343 origins; UTC 05-Jun-2023 04:00:00
+Corrected VA-REN: 29400/34343 origins; UTC 09-Jun-2023 08:00:00
+Corrected VA-REN: 29500/34343 origins; UTC 13-Jun-2023 12:00:00
+Checkpoint committed: 29500/34343 complete origins.
+Corrected VA-REN: 29600/34343 origins; UTC 17-Jun-2023 16:00:00
+Corrected VA-REN: 29700/34343 origins; UTC 21-Jun-2023 20:00:00
+Checkpoint committed: 29750/34343 complete origins.
+Corrected VA-REN: 29800/34343 origins; UTC 26-Jun-2023
+Corrected VA-REN: 29900/34343 origins; UTC 30-Jun-2023 04:00:00
+Corrected VA-REN: 30000/34343 origins; UTC 04-Jul-2023 08:00:00
+Checkpoint committed: 30000/34343 complete origins.
+Corrected VA-REN: 30100/34343 origins; UTC 08-Jul-2023 12:00:00
+Corrected VA-REN: 30200/34343 origins; UTC 12-Jul-2023 16:00:00
+Checkpoint committed: 30250/34343 complete origins.
+Corrected VA-REN: 30300/34343 origins; UTC 16-Jul-2023 20:00:00
+Corrected VA-REN: 30400/34343 origins; UTC 21-Jul-2023
+Corrected VA-REN: 30500/34343 origins; UTC 25-Jul-2023 04:00:00
+Checkpoint committed: 30500/34343 complete origins.
+Corrected VA-REN: 30600/34343 origins; UTC 29-Jul-2023 08:00:00
+Corrected VA-REN: 30700/34343 origins; UTC 02-Aug-2023 12:00:00
+Checkpoint committed: 30750/34343 complete origins.
+Corrected VA-REN: 30800/34343 origins; UTC 06-Aug-2023 16:00:00
+Corrected VA-REN: 30900/34343 origins; UTC 10-Aug-2023 20:00:00
+Corrected VA-REN: 31000/34343 origins; UTC 15-Aug-2023
+Checkpoint committed: 31000/34343 complete origins.
+Corrected VA-REN: 31100/34343 origins; UTC 19-Aug-2023 04:00:00
+Corrected VA-REN: 31200/34343 origins; UTC 23-Aug-2023 08:00:00
+Checkpoint committed: 31250/34343 complete origins.
+Corrected VA-REN: 31300/34343 origins; UTC 27-Aug-2023 12:00:00
+Corrected VA-REN: 31400/34343 origins; UTC 31-Aug-2023 16:00:00
+Corrected VA-REN: 31500/34343 origins; UTC 04-Sep-2023 20:00:00
+Checkpoint committed: 31500/34343 complete origins.
+Corrected VA-REN: 31600/34343 origins; UTC 09-Sep-2023
+Corrected VA-REN: 31700/34343 origins; UTC 13-Sep-2023 04:00:00
+Checkpoint committed: 31750/34343 complete origins.
+Corrected VA-REN: 31800/34343 origins; UTC 17-Sep-2023 08:00:00
+Corrected VA-REN: 31900/34343 origins; UTC 21-Sep-2023 12:00:00
+Corrected VA-REN: 32000/34343 origins; UTC 25-Sep-2023 16:00:00
+Checkpoint committed: 32000/34343 complete origins.
+Corrected VA-REN: 32100/34343 origins; UTC 29-Sep-2023 20:00:00
+Corrected VA-REN: 32200/34343 origins; UTC 04-Oct-2023
+Checkpoint committed: 32250/34343 complete origins.
+Corrected VA-REN: 32300/34343 origins; UTC 08-Oct-2023 04:00:00
+Corrected VA-REN: 32400/34343 origins; UTC 12-Oct-2023 08:00:00
+Corrected VA-REN: 32500/34343 origins; UTC 16-Oct-2023 12:00:00
+Checkpoint committed: 32500/34343 complete origins.
+Corrected VA-REN: 32600/34343 origins; UTC 20-Oct-2023 16:00:00
+Corrected VA-REN: 32700/34343 origins; UTC 24-Oct-2023 20:00:00
+Checkpoint committed: 32750/34343 complete origins.
+Corrected VA-REN: 32800/34343 origins; UTC 29-Oct-2023
+Corrected VA-REN: 32900/34343 origins; UTC 02-Nov-2023 04:00:00
+Corrected VA-REN: 33000/34343 origins; UTC 06-Nov-2023 08:00:00
+Checkpoint committed: 33000/34343 complete origins.
+Corrected VA-REN: 33100/34343 origins; UTC 10-Nov-2023 12:00:00
+Corrected VA-REN: 33200/34343 origins; UTC 14-Nov-2023 16:00:00
+Checkpoint committed: 33250/34343 complete origins.
+Corrected VA-REN: 33300/34343 origins; UTC 18-Nov-2023 20:00:00
+Corrected VA-REN: 33400/34343 origins; UTC 23-Nov-2023
+Corrected VA-REN: 33500/34343 origins; UTC 27-Nov-2023 04:00:00
+Checkpoint committed: 33500/34343 complete origins.
+Corrected VA-REN: 33600/34343 origins; UTC 01-Dec-2023 08:00:00
+Corrected VA-REN: 33700/34343 origins; UTC 05-Dec-2023 12:00:00
+Checkpoint committed: 33750/34343 complete origins.
+Corrected VA-REN: 33800/34343 origins; UTC 09-Dec-2023 16:00:00
+Corrected VA-REN: 33900/34343 origins; UTC 13-Dec-2023 20:00:00
+Corrected VA-REN: 34000/34343 origins; UTC 18-Dec-2023
+Checkpoint committed: 34000/34343 complete origins.
+Corrected VA-REN: 34100/34343 origins; UTC 22-Dec-2023 04:00:00
+Corrected VA-REN: 34200/34343 origins; UTC 26-Dec-2023 08:00:00
+Checkpoint committed: 34250/34343 complete origins.
+Corrected VA-REN: 34300/34343 origins; UTC 30-Dec-2023 12:00:00
+Corrected VA-REN: 34343/34343 origins; UTC 01-Jan-2024 07:00:00
+Checkpoint committed: 34343/34343 complete origins.
+[Warning: Some models select a lambda-grid endpoint in more than 5% of origins. Disclose it;
+change any grid using training/calibration evidence only.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('varen_checkpointed_core', '/Users/behroozmoosavi/Desktop/ieee/varen_checkpointed_core.m', 430)" style="font-weight:bold">varen_checkpointed_core</a> (<a href="matlab: opentoline('/Users/behroozmoosavi/Desktop/ieee/varen_checkpointed_core.m',430,0)">line 430</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_varen_step5_full', '/Users/behroozmoosavi/Desktop/ieee/run_varen_step5_full.m', 144)" style="font-weight:bold">run_varen_step5_full</a> (<a href="matlab: opentoline('/Users/behroozmoosavi/Desktop/ieee/run_varen_step5_full.m',144,0)">line 144</a>)] 
+
+VA-REN REVISION: STEP 5 FULL EVALUATION
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+
+STEP5_STATUS: PASS
+CHECKPOINT_EQUIVALENCE: PASS
+FULL_PERIOD_FORECASTS_RUN: YES
+FORECAST_ORIGINS: 34343
+CONFIGURED_OUTPUTS: 7
+
+First forecast interval start: 2020-01-31T09:00:00Z
+Last forecast interval start: 2024-01-01T07:00:00Z
+All origins, targets, naive forecasts and model parameter domains passed validation.
+The first 24 full-run forecasts also reproduce the original Step 4 pilot.
+Selected static alpha: 1 (selected once using the initial calibration only).
+LASSO and calibrated StaticEN coincide; FixedEN05 remains the fixed-alpha=.5 control.
+
+One-time static-alpha calibration: 1.709 seconds
+Total recorded per-model forecast-loop fitting time: 24506.884 seconds (6.807 hours)
+Mean / median origin fitting time: 0.714 / 0.651 seconds
+Core cumulative compute time: 24518.087 seconds
+Wall time of the latest full-core invocation: 24664.997 seconds
+Latest invocation started from 0 saved origins; computed 34343 additional origins.
+Latest invocation checkpoint write time: 144.928 seconds
+Latest invocation checkpoint read time: 0.000 seconds
+Run pauses are excluded from core compute/fit timings.
+Compute totals cover retained work; a process crash can leave abandoned work after the last save unrecorded.
+Initial resume-equivalence check and final ZIP packaging are outside full-run fitting times.
+
+Lambda endpoint counts/fractions are retained for review; no grid changes were made.
+Target: hourly system demand, not solar-subtracted net load.
+Historical published actuals may contain revisions; this is not an as-of vintage archive.
+Completed-hour load is assumed available at the next forecast origin.
+Annual lag: 8760 elapsed hours. Calendar predictors: America/Los_Angeles.
+No DM/GW significance tests or nonlinear benchmark are added by this run.
+A successful run is not a finding of accuracy superiority.
+Return step5_full_results.zip for the next results/revision review.
+
+          <strong>Model</strong>            <strong>N</strong>      <strong>RMSE_MW</strong>    <strong>MAE_MW</strong>    <strong>MAPE_pct</strong>    <strong>RMSE_Improvement_pct</strong>    <strong>ForecastLoopSeconds</strong>    <strong>LambdaBoundaryFraction</strong>
+    <strong>_________________</strong>    <strong>_____</strong>    <strong>_______</strong>    <strong>______</strong>    <strong>________</strong>    <strong>____________________</strong>    <strong>___________________</strong>    <strong>______________________</strong>
+
+    {'Persistence'  }    34343    1050.9     863.15     3.3635            -347.92                0.12817                         0      
+    {'SeasonalNaive'}    34343      2738     1766.6     6.6325              -1067                0.12073                         0      
+    {'Ridge'        }    34343    236.36     172.66    0.69316           -0.74529                 476.64                  0.094808      
+    {'LASSO'        }    34343    234.62     171.09    0.68764                  0                 5949.8                0.00093178      
+    {'StaticEN'     }    34343    234.62     171.09    0.68764                  0                 5942.2                0.00093178      
+    {'FixedEN05'    }    34343    234.48     170.99    0.68727           0.057063                 5980.8                 0.0017471      
+    {'VAREN'        }    34343    234.48        171    0.68724           0.056604                 6157.3                 0.0016306      
+
+        <strong>Model</strong>        <strong>EndpointSelections</strong>    <strong>EndpointFraction</strong>    <strong>LowerEndpointSelections</strong>    <strong>UpperEndpointSelections</strong>
+    <strong>_____________</strong>    <strong>__________________</strong>    <strong>________________</strong>    <strong>_______________________</strong>    <strong>_______________________</strong>
+
+    {'Ridge'    }           3256                0.094808                3256                         0           
+    {'LASSO'    }             32              0.00093178                  32                         0           
+    {'StaticEN' }             32              0.00093178                  32                         0           
+    {'FixedEN05'}             60               0.0017471                  60                         0           
+    {'VAREN'    }             56               0.0016306                  56                         0           
+

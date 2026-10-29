@@ -1,0 +1,6 @@
+Year,File,Sheet,RowsBelowHeader,SourceRecords,BlankCoreRows,InvalidDateRows,NonMidnightDates,WrongYearRows,InvalidHourRows,InvalidLoadRows,DuplicateLabelGroups,ExtraDuplicateRows,AbsentNominalHours,DaysWithNon24Rows,SourceOrderStepFlags,HE24DateChangeRows,NoteCells
+2019,historicalemshourlyload-2019.xlsx,2019 Historical EMS Hourly Load,8760,8760,0,0,0,0,0,0,1,1,1,2,62,31,3
+2020,historicalemshourlyload-2020.xlsx,2019 Historical EMS Hourly Load,8784,8784,0,0,0,0,0,0,1,1,1,2,2,0,3
+2021,historicalemshourlyload-2021.xlsx,EMS Hourly Load for 2021,8760,8760,0,0,0,0,0,0,1,1,1,2,2,0,0
+2022,historicalemshourlyload-2022.xlsx,EMS Hourly Load for 2022,8760,8760,0,0,0,0,0,0,1,1,1,2,2,0,0
+2023,historicalemshourlyloadfor2023.xlsx,EMS Hourly Load for 2023,8760,8760,0,0,0,0,0,0,1,1,1,2,2,0,0

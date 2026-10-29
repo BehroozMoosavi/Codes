@@ -1,0 +1,40 @@
+VA-REN REVISION: STEP 7 FULL NONLINEAR EVALUATION
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+
+STEP7_STATUS: PASS
+CHECKPOINT_EQUIVALENCE: PASS
+ORIGINAL_CORE_REFERENCE: PASS
+FUTURE_PERTURBATION_CHECK: PASS
+FULL_PERIOD_NONLINEAR_FORECASTS_RUN: YES
+FORECAST_ORIGINS: 34343
+NONLINEAR_MODEL: LSBoost24h
+TUNING_EVENTS: 1431
+HOURLY_REFITS: 34343
+
+First forecast interval start: 2020-01-31T09:00:00Z
+Last forecast interval start: 2024-01-01T07:00:00Z
+Fixed structure: max splits 3; minimum leaf 20; learning rate .1.
+Count grid: 25, 50, 100, 200, 400, 800, 1600.
+Count retuned every 24 elapsed origins; model refitted every hour on latest 720 hours.
+This differs from hourly lambda tuning in Step 5 and hourly count tuning in Step 6.
+The frequency decision was based on calibration cost, not evaluation accuracy.
+
+Prior Step 6b calibration: 77.848 seconds (already incurred, not rerun in full loop).
+Full-loop chronological tuning time: 17831.431 seconds
+Full-loop hourly fit/predict time: 32665.840 seconds
+Total recorded nonlinear forecast-loop time: 50498.967 seconds (14.027 hours)
+Core cumulative compute time: 50570.464 seconds
+Latest full-core invocation wall time: 50709.729 seconds
+Latest invocation resumed from 0 origins and computed 34343 additional origins.
+Latest invocation checkpoint write/read time: 138.862 / 0.000 seconds
+Paused time and preflight checks are outside full-loop timings.
+A crash can leave work after the last saved origin unrecorded.
+
+Endpoint rates are reported separately for tuning events and hours using the selected count.
+Eight aligned outputs include the seven saved Step 5 outputs; StaticEN and LASSO coincide.
+Step 5 models are reused without refitting. Combined timings come from separate runs.
+Target: hourly system demand, not solar-subtracted net load.
+Published historical actuals may be revised; completed-hour availability is assumed.
+Annual lag: 8760 elapsed hours. Calendar predictors: America/Los_Angeles.
+No significance tests are performed by this script. A valid run does not establish superiority.
+Return step7_full_results.zip.

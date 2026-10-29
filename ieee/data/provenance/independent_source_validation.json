@@ -1,0 +1,499 @@
+{
+  "status": "PASS",
+  "audited_utc": "2026-10-27T17:29:28.327395+00:00",
+  "audit_scope": "Independent standard-library reread of all canonical records and all raw ZIP response CSVs; no network retrieval.",
+  "canonical_csv_sha256": "249120565acab4af01f3dab853da075562b809edaf758ff0f7f7033774b33881",
+  "canonical_records": 43824,
+  "raw_archives": 66,
+  "all_areas_raw_records": 1034923,
+  "raw_source_records_compared": 43824,
+  "selected_source_records_outside_query_bounds": 0,
+  "first_interval_start_utc": "2019-01-01T08:00:00Z",
+  "last_interval_start_utc": "2024-01-01T07:00:00Z",
+  "last_interval_end_utc": "2024-01-01T08:00:00Z",
+  "Pacific_calendar_days": 1826,
+  "missing_physical_hours": 0,
+  "duplicate_physical_hours": 0,
+  "interpolations_by_acquisition": 0,
+  "deduplications_by_acquisition": 0,
+  "invalid_load_values": 0,
+  "source_load_labels": {
+    "Total Actual Hourly Integrated Load": 43824
+  },
+  "source_load_type_values": {
+    "0": 43824
+  },
+  "per_local_year": [
+    {
+      "year": 2019,
+      "records": 8760,
+      "days_23_hours": 1,
+      "days_24_hours": 363,
+      "days_25_hours": 1,
+      "min_MW": 17053.0,
+      "max_MW": 43872.0,
+      "mean_MW": 25052.125456621005
+    },
+    {
+      "year": 2020,
+      "records": 8784,
+      "days_23_hours": 1,
+      "days_24_hours": 364,
+      "days_25_hours": 1,
+      "min_MW": 15691.0,
+      "max_MW": 46967.0,
+      "mean_MW": 24941.21379781421
+    },
+    {
+      "year": 2021,
+      "records": 8760,
+      "days_23_hours": 1,
+      "days_24_hours": 363,
+      "days_25_hours": 1,
+      "min_MW": 15882.0,
+      "max_MW": 43591.0,
+      "mean_MW": 25152.170433789954
+    },
+    {
+      "year": 2022,
+      "records": 8760,
+      "days_23_hours": 1,
+      "days_24_hours": 363,
+      "days_25_hours": 1,
+      "min_MW": 14853.0,
+      "max_MW": 51292.0,
+      "mean_MW": 25659.30319634703
+    },
+    {
+      "year": 2023,
+      "records": 8760,
+      "days_23_hours": 1,
+      "days_24_hours": 363,
+      "days_25_hours": 1,
+      "min_MW": 14967.0,
+      "max_MW": 44092.0,
+      "mean_MW": 25023.570662100457
+    }
+  ],
+  "checks": {
+    "canonical_schema_exact": true,
+    "manifest_schema_exact": true,
+    "canonical_sha256_matches_metadata": true,
+    "all_66_raw_archive_hashes_match_manifest_and_sidecars": true,
+    "all_66_request_urls_and_bounds_match_the_acquisition_protocol": true,
+    "every_canonical_record_matches_its_raw_MW_and_both_UTC_endpoints": true,
+    "every_in_range_selected_raw_record_retained_exactly_once": true,
+    "provider_series_identity_matches_every_retained_record": true,
+    "all_load_values_finite_and_positive": true,
+    "all_intervals_exactly_one_hour": true,
+    "complete_unique_ordered_UTC_hourly_grid": true,
+    "every_Pacific_day_has_the_expected_physical_hour_count": true,
+    "per_year_counts_and_source_metadata_agree": true,
+    "no_load_values_interpolated_or_transformed_by_the_acquisition": true,
+    "no_selected_in_range_source_records_deduplicated_or_discarded": true
+  },
+  "archive_checks": [
+    {
+      "archive": "oasis_actual_001.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_002.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_003.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_004.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_005.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_006.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_007.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_008.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_009.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_010.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_011.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_012.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_013.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_014.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_015.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_016.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_017.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_018.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_019.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_020.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_021.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_022.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_023.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_024.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_025.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_026.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_027.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_028.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_029.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_030.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_031.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_032.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_033.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_034.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_035.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_036.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_037.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_038.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_039.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_040.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_041.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_042.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_043.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_044.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_045.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_046.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_047.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_048.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_049.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_050.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_051.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_052.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_053.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_054.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_055.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_056.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_057.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_058.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_059.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_060.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_061.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_062.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_063.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_064.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_065.zip",
+      "selected_rows": 672,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    },
+    {
+      "archive": "oasis_actual_066.zip",
+      "selected_rows": 144,
+      "sha256_matches_manifest": true,
+      "all_selected_raw_rows_match": true
+    }
+  ],
+  "limitations": [
+    "Verifies exact fidelity to the retained provider ACTUAL responses; does not independently verify metering accuracy or exclude provider-side estimation/revision.",
+    "The source is a historical published vintage retrieved in 2026, not an archive of the values available at each historical forecast origin.",
+    "The subsequent forecasting protocol assumes previous completed-hour load is available at the next interval start.",
+    "This is a uniform replacement of the original EMS source, requiring all forecasts and empirical results to be recomputed."
+  ]
+}

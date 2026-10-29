@@ -1,0 +1,71 @@
+{
+  "status": "COMPLETE_WITH_NO_GAPS_OR_DUPLICATES",
+  "source": "California ISO OASIS SLD_FCST, ACTUAL, CA ISO-TAC, SYS_FCST_ACT_MW",
+  "interval_convention": "Provider-supplied UTC start and end; timeUTC is interval start",
+  "units": "MW",
+  "rows": 43824,
+  "query_blocks": 66,
+  "first_interval_start_utc": "2019-01-01T08:00:00Z",
+  "last_interval_end_utc": "2024-01-01T08:00:00Z",
+  "calendar_timezone": "America/Los_Angeles",
+  "interpolations": 0,
+  "duplicate_rows_removed": 0,
+  "missing_hours": 0,
+  "invalid_loads": 0,
+  "canonical_csv_sha256": "249120565acab4af01f3dab853da075562b809edaf758ff0f7f7033774b33881",
+  "per_local_year": [
+    {
+      "LocalYear": 2019,
+      "count": 8760,
+      "min": 17053.0,
+      "max": 43872.0,
+      "mean": 25052.125456621005
+    },
+    {
+      "LocalYear": 2020,
+      "count": 8784,
+      "min": 15691.0,
+      "max": 46967.0,
+      "mean": 24941.21379781421
+    },
+    {
+      "LocalYear": 2021,
+      "count": 8760,
+      "min": 15882.0,
+      "max": 43591.0,
+      "mean": 25152.170433789954
+    },
+    {
+      "LocalYear": 2022,
+      "count": 8760,
+      "min": 14853.0,
+      "max": 51292.0,
+      "mean": 25659.30319634703
+    },
+    {
+      "LocalYear": 2023,
+      "count": 8760,
+      "min": 14967.0,
+      "max": 44092.0,
+      "mean": 25023.570662100457
+    }
+  ],
+  "protocol": {
+    "volatility_calibration_year": 2019,
+    "evaluation_years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "annual_lag_elapsed_hours": 8760,
+    "initial_calibration_rows": 720,
+    "expected_scored_forecast_origins": 34343
+  },
+  "limitations": [
+    "This is a uniformly replaced source series, not a repair or exact reproduction of EMS values.",
+    "Historical published actuals may contain provider revisions; this is not an as-of data-vintage archive.",
+    "The backtest assumes the completed hour's load is available at the next forecast origin.",
+    "Series contains system demand, not utility-solar-subtracted net load."
+  ]
+}

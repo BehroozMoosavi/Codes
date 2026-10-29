@@ -1,0 +1,25 @@
+CAISO OASIS INPUT VALIDATION: STEP 3
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+
+STEP3_STATUS: PASS
+FORECASTS_RUN: NO
+TIMESTAMP_PROVENANCE: PROVIDER_SUPPLIED_UTC_INTERVAL_START_AND_END
+
+43824 unique, contiguous, finite positive hourly system-load records.
+66 source archives; every retained source row has valid lineage.
+First interval start: 2019-01-01T08:00:00Z
+Last interval end: 2024-01-01T08:00:00Z
+Every Pacific calendar day has its expected 23, 24, or 25 physical hours.
+2019 causal volatility calibration: 8711 complete 48-hour windows.
+2020-2023 model-ready rows: 35063; initial calibration rows: 720.
+Expected default-core forecasts: 34343.
+First model-ready start: 2020-01-01T09:00:00Z (2020-01-01 01:00 Pacific).
+First forecast interval start: 2020-01-31T09:00:00Z (2020-01-31 01:00 Pacific).
+
+New OASIS series replaces EMS values; not a reproduction or recovery of averaged EMS hours.
+Published historical actuals may contain revisions; not an as-of vintage archive.
+Completed-hour load is assumed available at the next forecast origin.
+Target: system demand, not solar-subtracted net load.
+The annual predictor uses 8760 elapsed hours, not a calendar-year match.
+No forecasts, interpolation, deduplication, or EMS repairs were performed.
+Return step3_validation.zip for review before the forecasting step.

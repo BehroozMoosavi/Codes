@@ -1,0 +1,6 @@
+{
+  "url": "https://oasis.caiso.com/oasisapi/SingleZip?queryname=SLD_FCST&startdatetime=20210323T08%3A00-0000&enddatetime=20210420T08%3A00-0000&version=1&market_run_id=ACTUAL&resultformat=6",
+  "retrieved_utc": "2026-10-27T17:23:26.010159+00:00",
+  "sha256": "3588f8654659de26a4727178894656858b691fcf36a8f5487a1d7608915d4a91",
+  "bytes": 133782
+}

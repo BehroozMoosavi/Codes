@@ -1,0 +1,63 @@
+
+VA-REN REVISION: STEP 8 SAVED-FORECAST ANALYSIS
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+Step 7 folder: /Users/behroozmoosavi/Desktop/ieee/step7_full_tp2b7a8ed2_2b71_4adc_961d_617f7ae720a7
+Output folder: /Users/behroozmoosavi/Desktop/ieee/step8_analysis_tp8adddfd9_0f9f_45f7_b7a8_a1ac5400c935
+No forecasts or model fitting. All saved input files remain read-only.
+Running deterministic inference self-tests.
+PASS: 37 saved-forecast inference checks; 1.393 seconds.
+Checking source identity, common origins, held counts and forecast reproduction.
+Recomputing 48-hour past-only volatility and 2019 normalization.
+Computing paired effects and HAC inference at lags 168, 24, 48 and 720 hours.
+
+VA-REN REVISION: STEP 8 SAVED-FORECAST ANALYSIS
+Revision 1.0; MATLAB 25.1.0.2943329 (R2025a)
+
+STEP8_STATUS: PASS
+SELF_TEST_STATUS: PASS
+INPUT_VALIDATION: PASS
+RNG_RESTORATION_CHECK: PASS
+FORECASTS_REFIT: NO
+FORECAST_ORIGINS: 34343
+ALIGNED_OUTPUTS: 8
+DISTINCT_FORECAST_RULES: 7
+
+Primary displayed analysis: full-sample MSE, Bartlett HAC lag 168 elapsed hours.
+Sensitivity bandwidths: 24, 48 and 720 hours; no bandwidth selected by p-value.
+All analyses are revision-stage exploratory, not preregistered confirmatory tests.
+DM tests are two-sided asymptotic loss-differential comparisons.
+Gains are comparator minus VA-REN; positive values favor VA-REN.
+RMSE/MAE effect intervals are pointwise asymptotic 95% intervals, not simultaneous.
+Holm p-values adjust all three planned pairs separately by test, loss and bandwidth.
+Undefined tests remain in the multiplicity family and retain undefined reported p-values.
+GW-style tests are secondary joint conditional-moment tests, with nondirectional p-values.
+Instruments: constant, causal normalized volatility, Pacific midday and evening indicators.
+Year and clock-window results are descriptive only; no compressed-subset inference.
+Identical StaticEN/LASSO predictions are reported once for comparison inference.
+
+Inference assumes suitable weak dependence, finite relevant moments, and sufficient stability
+for the stated asymptotic approximations. These assumptions are not certified by this script.
+HAC does not correct arbitrary nonstationarity. A failure to reject is not equivalence.
+Statistical significance alone does not establish practical or operational importance.
+Runtime comparisons reuse separate runs; tuning budgets differ and this is not a microbenchmark.
+No settings, predictors, forecasts or source files were changed.
+Target remains hourly system demand, not solar-subtracted net load.
+
+Inference-core time: 2.044 seconds
+Analysis elapsed before final packaging: 33.456 seconds
+Return step8_analysis_results.zip for final manuscript and reviewer-response preparation.
+
+       <strong>ModelB</strong>       <strong>RMSE_Gain_MW</strong>    <strong>RMSE_CI95_Lower_MW</strong>    <strong>RMSE_CI95_Upper_MW</strong>    <strong>MSE_DM_P_TwoSided</strong>    <strong>MSE_DM_P_Holm</strong>    <strong>Secondary_MSE_GW_P_Joint</strong>    <strong>DM_Status</strong>    <strong>GW_Status</strong>
+    <strong>____________</strong>    <strong>____________</strong>    <strong>__________________</strong>    <strong>__________________</strong>    <strong>_________________</strong>    <strong>_____________</strong>    <strong>________________________</strong>    <strong>_________</strong>    <strong>_________</strong>
+
+    "StaticEN"           0.1328          -0.20241              0.46802                0.43996            0.87992                0.33407             "OK"         "OK"   
+    "FixedEN05"      -0.0010774           -0.2356              0.23344                0.99282            0.99282                0.25916             "OK"         "OK"   
+    "LSBoost24h"         14.455            11.645               17.265             1.0701e-23         3.2104e-23             5.2928e-34             "OK"         "OK"   
+
+         <strong>Subset</strong>            <strong>N</strong>      <strong>MeanRawVariance</strong>    <strong>MeanNormalizedVolatility</strong>    <strong>SDNormalizedVolatility</strong>    <strong>MeanAlpha</strong>    <strong>SDAlpha</strong>    <strong>MinAlpha</strong>    <strong>MedianAlpha</strong>    <strong>MaxAlpha</strong>    <strong>StrictLowerClippedCount</strong>    <strong>StrictUpperClippedCount</strong>    <strong>StrictLowerClipFraction</strong>    <strong>StrictUpperClipFraction</strong>    <strong>NormalizedAtZeroFraction</strong>    <strong>NormalizedAtOneFraction</strong>    <strong>AlphaFloorFraction</strong>
+    <strong>_________________</strong>    <strong>_____</strong>    <strong>_______________</strong>    <strong>________________________</strong>    <strong>______________________</strong>    <strong>_________</strong>    <strong>_______</strong>    <strong>________</strong>    <strong>___________</strong>    <strong>________</strong>    <strong>_______________________</strong>    <strong>_______________________</strong>    <strong>_______________________</strong>    <strong>_______________________</strong>    <strong>________________________</strong>    <strong>_______________________</strong>    <strong>__________________</strong>
+
+    {'All'          }    34343        16.382                 0.34421                    0.15634             0.65579     0.15634     0.001         0.6684         1                  87                         25                      0.0025333                 0.00072795                  0.0025333                  0.00072795               0.00072795    
+    {'Midday10to14' }     7155        16.341                  0.3427                    0.16197              0.6573     0.16197     0.001        0.67107         1                  39                          5                      0.0054507                 0.00069881                  0.0054507                  0.00069881               0.00069881    
+    {'Evening16to21'}     8586        16.381                 0.34419                    0.15067             0.65581     0.15067     0.001        0.66824         1                  10                          4                      0.0011647                 0.00046587                  0.0011647                  0.00046587               0.00046587    
+
